@@ -254,7 +254,7 @@ for x in [
     'cocoagouticolours', 'cocodiluteagouticolours', 'cococaramelagouticolours',
     'cocomackerelextra', 'cocodilutemackerelextra', 'cococaramelmackerelextra',
     'cococlassicextra', 'cocodiluteclassicextra', 'cococaramelclassicextra',
-    'cocoagoutiextra', 'cocodiluteagoutiextra', 'cococaramelagoutietra',
+    'cocoagoutiextra', 'cocodiluteagoutiextra', 'cococaramelagoutiextra',
     'whitepatches3', 'whitepatches3extra', 'whitepatches4', 'whitepatches4extra',
     'Newscars', 'Newscarsextra', 'shadersnewwhite', 'lineartdead',
     'tortiecolourssolid', 'tortiecolourstabby', 'tortiecoloursbengal', 'tortiecoloursmarbled',
