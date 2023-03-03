@@ -31,25 +31,20 @@ class Name():
         "scratch", "seed", "shade", "shadow", "shell", "shine", "sight", "skip", "sky", "slip", "snout", "snow", "song", "spark",
         "speck", "speckle", "spirit", "splash", "spot", "spots", "spring", "stalk", "stem", "step", "stone", "storm", "streak",
         "stream", "strike", "stripe", "sun", "swipe", "swoop", "talon", "teeth", "thistle", "thorn", "throat", "toe", "tree", 
-        "throat", "watcher", "water", "wave", "whisper", "whistle", "willow", "wind", "wing", "wish"
+        "throat", "watcher", "water", "wave", "whisper", "whistle", "wind", "wing", "wish"
     ]
 
     pelt_suffixes = {
         'TwoColour': ['patch', 'spot', 'splash', 'patch', 'spots'],
-        'Tabby': ['stripe', 'feather', 'leaf', 'stripe', 'shade'],
         'Marbled': ['stripe', 'feather', 'leaf', 'stripe', 'shade'],
-        'Speckled': ['dapple', 'speckle', 'spot', 'speck', 'freckle'],
-        'Bengal': ['dapple', 'speckle', 'spots', 'speck', 'freckle'],
+        'Spotted': ['dapple', 'speckle', 'spot', 'speck', 'freckle'],
         'Tortie': ['dapple', 'speckle', 'spot', 'dapple'],
-        'Rosette': ['dapple', 'speckle', 'spots', 'dapple', 'freckle'],
+        'Rosetted': ['dapple', 'speckle', 'spots', 'dapple', 'freckle'],
         'Calico': ['stripe', 'dapple', 'patch', 'patch'],
-        'Smoke': ['fade', 'dusk', 'dawn', 'smoke'],
         'Ticked': ['spots', 'pelt', 'speckle', 'freckle'],
         'Mackerel': ['stripe', 'feather', 'leaf', 'stripe', 'fern'],
         'Classic': ['stripe', 'feather', 'leaf', 'stripe', 'fern'],
-        'Sokoke': ['stripe', 'feather', 'leaf', 'stripe', 'fern'],
-        'Agouti': ['back', 'pelt', 'fur'],
-        'Singlestripe': ['stripe', 'streak', 'back', 'shade', "stem", "shadow"]
+        'Agouti': ['back', 'pelt', 'fur']
     }
 
     tortie_pelt_suffixes = {
@@ -104,69 +99,249 @@ class Name():
         'Stumpy', 'Sunny', 'Swallow', 'Swamp', 'Sweet', 'Swift', 'Sycamore', 'Tall', 'Talon', 'Tangle', 'Tansy', 'Tawny', 'Thistle', 'Thorn',
         'Thrift', 'Thrush', 'Thunder', 'Thyme', 'Tiger', 'Timber', 'Tiny', 'Tip', 'Toad', 'Torn', 'Trout', 'Tuft', 'Tulip', 
         'Tumble', 'Turtle', 'Twisted', 'Vine', 'Vixen', 'Warm', 'Wasp', 'Wave', 'Weasel', 'Web', 'Weed', 'Wet', 'Wheat', 'Whirl', 'Whisker',
-        'Whisper', 'Whispering', 'Whistle', 'Whorl', 'Wild', 'Willow', 'Wind', 'Wish', 'Wing', 'Wisteria', 'Wolf', 'Wood', 'Wren', 'Yarrow', 'Yew'
+        'Whisper', 'Whispering', 'Whistle', 'Whorl', 'Wild', 'Wind', 'Wish', 'Wing', 'Wisteria', 'Wolf', 'Wood', 'Wren', 'Yarrow', 'Yew'
     ]
 
     colour_prefixes = {
-        'WHITE': [
-            'White', 'White', 'Pale', 'Snow', 'Cloud', 'Cloudy', 'Milk', 'Hail', 'Frost', 'Frozen', 'Freeze', 'Ice', 'Icy', 'Sheep',
-            'Blizzard', 'Flurry', 'Moon', 'Star', 'Light', 'Bone', 'Bright', 'Swan', 'Dove', 'Wooly', 'Wool', 'Cotton', 'Warm', 'Arctic'
+        'INK': [
+            'Black', 'Ink', 'Coal', 'Shadow', 'Ebony', 'Black', 'Void'
         ],
-        'PALEGREY': [
-            'Grey', 'Silver', 'Pale', 'Light', 'Cloud', 'Cloudy', 'Hail', 'Frost', 'Ice', 'Icy', 'Mouse', 'Bright', "Fog", 'Freeze',
-            'Frozen', 'Stone', 'Pebble', 'Dove', 'Sky', 'Cotton', 'Heather', 'Warm', 'Arctic', 'Ashen'
+        'COAL': [
+            'Black', 'Ink', 'Coal', 'Shadow', 'Ebony', 'Black', 'Void'
         ],
-        'SILVER': [
-            'Grey', 'Silver', 'Cinder', 'Ice', 'Icy', 'Frost', 'Frozen', 'Freeze', 'Rain', 'Blue',
-            'River', 'Blizzard', 'Flurry', 'Bone', 'Bleak', 'Stone', 'Pebble', 'Heather', 'Warm', 'Arctic'
+        'SHADOW': [
+            'Black', 'Ink', 'Coal', 'Shadow', 'Ebony', 'Black', 'Void'
         ],
-        'GREY': [
-            'Grey', 'Grey', 'Ash', 'Ashen', 'Cinder', 'Rock', 'Stone', 'Shade', 'Mouse', 'Smoke', 'Smoky', 'Shadow', "Fog", 'Bone', 
-            'Bleak', 'Rain', 'Storm', 'Soot', 'Pebble', 'Mist', 'Misty', 'Heather',
-        ],
-        'DARKGREY': [
-            'Grey', 'Shade', 'Raven', 'Crow', 'Stone', 'Dark', 'Night', 'Cinder', 'Ash', 'Ashen',
-            'Smoke', 'Smokey', 'Shadow', 'Bleak', 'Rain', 'Storm', 'Pebble', 'Mist', 'Misty'
-        ],
-        'GHOST': [
-            'Black', 'Black', 'Shade', 'Shaded', 'Crow', 'Raven', 'Ebony', 'Dark',
-            'Night', 'Shadow', 'Scorch', 'Midnight', 'Bleak', 'Storm', 'Violet', 'Pepper', 'Bat'
-        ],
-        'PALEGINGER': [
-            'Pale', 'Ginger', 'Sand', 'Sandy', 'Yellow', 'Sun', 'Sunny', 'Light', 'Lion', 'Bright',
-            'Honey', 'Daisy', 'Warm', 'Robin'
-        ],
-        'GOLDEN': [
-            'Gold', 'Golden', 'Yellow', 'Sun', 'Sunny', 'Light', 'Lightning', 'Thunder',
-            'Honey', 'Tawny', 'Lion', 'Dandelion', 'Marigold', 'Warm'
-        ],
-        'GINGER': [
-            'Ginger', 'Ginger', 'Red', 'Fire', 'Rust', 'Flame', 'Ember', 'Sun', 'Sunny', 'Light', 'Primrose', 'Rose',
-            'Rowan', 'Fox', 'Tawny', "Plum", 'Orange', 'Warm', 'Burn', 'Burnt', 'Robin', 'Amber'
-        ],
-        'DARKGINGER': [
-            'Ginger', 'Ginger', 'Red', 'Red', 'Fire', 'Rust', 'Flame', 'Ember', 'Oak', 'Shade', 'Russet',
-            'Rowan', 'Fox', 'Orange', 'Copper', 'Cinnamon', 'Burn', 'Burnt', 'Jasper', 'Robin'
-        ],
-        'CREAM': [
-            'Sand', 'Sandy', 'Yellow', 'Pale', 'Cream', 'Light', 'Milk', 'Fawn',
-            'Bone', 'Daisy', 'Branch', 'Warm', 'Robin', 'Almond', 'Acorn'
-        ],
-        'LIGHTBROWN': [
-            'Brown', 'Pale', 'Light', 'Mouse', 'Dust', 'Dusty', 'Sand', 'Sandy', 'Bright', 'Mud',
-            'Hazel', 'Vole', 'Branch', 'Warm', 'Robin', 'Almond', 'Acorn', 'Bark'
-        ],
-        'BROWN': [
-            'Brown', 'Oak', 'Mouse', 'Dark', 'Shade', 'Russet', 'Dust', 'Dusty', 'Acorn', 'Mud', 'Deer', 'Fawn', 'Doe', 'Stag',
-            'Twig', 'Owl', 'Otter', 'Log', 'Vole', 'Branch', 'Hazel', 'Robin', 'Acorn', 'Bark'
-        ],
-        'DARKBROWN': [
-            'Brown', 'Dark', 'Shade', 'Night', 'Russet', 'Rowan', 'Mud', 'Oak', 'Stag', 'Elk', 'Twig',
-            'Owl', 'Otter', 'Log', 'Hickory', 'Branch', 'Robin', 'Bark'
+        'EBONY': [
+            'Black', 'Ink', 'Coal', 'Shadow', 'Ebony', 'Black', 'Void'
         ],
         'BLACK': [
-            'Black', 'Black', 'Shade', 'Shaded', 'Crow', 'Raven', 'Ebony', 'Dark',
-            'Night', 'Shadow', 'Scorch', 'Midnight', 'Pepper', 'Jet', 'Bat', 'Burnt'
+            'Black', 'Ink', 'Coal', 'Shadow', 'Ebony', 'Black', 'Void'
+        ],
+        'VOID': [
+            'Black', 'Ink', 'Coal', 'Shadow', 'Ebony', 'Black', 'Void'
+        ],
+        'CHOCOLATE': [
+            'Brown', 'Brown', 'Chocolate', 'Chestnut', 'Cocoa', 'Umber', 'Mud', 'Dark'
+        ],
+        'CHESTNUT': [
+            'Brown', 'Brown', 'Chocolate', 'Chestnut', 'Cocoa', 'Umber', 'Mud', 'Dark'
+        ],
+        'COCOA': [
+            'Brown', 'Brown', 'Chocolate', 'Chestnut', 'Cocoa', 'Umber', 'Mud', 'Dark'
+        ],
+        'UMBER': [
+            'Brown', 'Brown', 'Chocolate', 'Chestnut', 'Cocoa', 'Umber', 'Mud', 'Dark'
+        ],
+        'MUD': [
+            'Brown', 'Brown', 'Chocolate', 'Chestnut', 'Cocoa', 'Umber', 'Mud', 'Dark'
+        ],
+        'DARKCHOCLATE': [
+            'Brown', 'Brown', 'Chocolate', 'Chestnut', 'Cocoa', 'Umber', 'Mud', 'Dark'
+        ],
+        'CASHEW': [
+            'Brown', 'Brown', 'Cashew', 'Pecan', 'Almond', 'Rust', 'Cinnamon', 'Walnut'
+        ],
+        'PECAN': [
+            'Brown', 'Brown', 'Cashew', 'Pecan', 'Almond', 'Rust', 'Cinnamon', 'Walnut'
+        ],
+        'ALMOND': [
+            'Brown', 'Brown', 'Cashew', 'Pecan', 'Almond', 'Rust', 'Cinnamon', 'Walnut'
+        ],
+        'RUST': [
+            'Brown', 'Brown', 'Cashew', 'Pecan', 'Almond', 'Rust', 'Cinnamon', 'Walnut'
+        ],
+        'CINNAMON': [
+            'Brown', 'Brown', 'Cashew', 'Pecan', 'Almond', 'Rust', 'Cinnamon', 'Walnut'
+        ],
+        'WALNUT': [
+            'Brown', 'Brown', 'Cashew', 'Pecan', 'Almond', 'Rust', 'Cinnamon', 'Walnut'
+        ],
+        'YELLOW': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red'
+        ],
+        'EMBER': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red'
+        ],
+        'GINGER': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red'
+        ],
+        'ORANGE': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red'
+        ],
+        'MARMALADE': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red'
+        ],
+        'RED': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red'
+        ],
+        'CLOUD': [
+            'Gray', 'Blue', 'Cloud', 'Mist', 'Gray', 'Blue', 'Stone', 'Storm'
+        ],
+        'MIST': [
+            'Gray', 'Blue', 'Cloud', 'Mist', 'Gray', 'Blue', 'Stone', 'Storm'
+        ],
+        'GRAY': [
+            'Gray', 'Blue', 'Cloud', 'Mist', 'Gray', 'Blue', 'Stone', 'Storm'
+        ],
+        'BLUE': [
+            'Gray', 'Blue', 'Cloud', 'Mist', 'Gray', 'Blue', 'Stone', 'Storm'
+        ],
+        'STONE': [
+            'Gray', 'Blue', 'Cloud', 'Mist', 'Gray', 'Blue', 'Stone', 'Storm'
+        ],
+        'STORM': [
+            'Gray', 'Blue', 'Cloud', 'Mist', 'Gray', 'Blue', 'Stone', 'Storm'
+        ],
+        'HEATHER': [
+            'Gray', 'Gray', 'Heather', 'Rose', 'Lilac', 'Lavender', 'Dusk', 'Cedar'
+        ],
+        'ROSE': [
+            'Gray', 'Gray', 'Heather', 'Rose', 'Lilac', 'Lavender', 'Dusk', 'Cedar'
+        ],
+        'LILAC': [
+            'Gray', 'Gray', 'Heather', 'Rose', 'Lilac', 'Lavender', 'Dusk', 'Cedar'
+        ],
+        'LAVENDER': [
+            'Gray', 'Gray', 'Heather', 'Rose', 'Lilac', 'Lavender', 'Dusk', 'Cedar'
+        ],
+        'DUSK': [
+            'Gray', 'Gray', 'Heather', 'Rose', 'Lilac', 'Lavender', 'Dusk', 'Cedar'
+        ],
+        'CEDAR': [
+            'Gray', 'Gray', 'Heather', 'Rose', 'Lilac', 'Lavender', 'Dusk', 'Cedar'
+        ],
+        'PINK': [
+            'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn'
+        ],
+        'ECRU': [
+            'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn'
+        ],
+        'DUST': [
+            'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn'
+        ],
+        'STAG': [
+            'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn'
+        ],
+        'DOE': [
+            'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn'
+        ],
+        'FAWN': [
+            'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn'
+        ],
+        'LIGHT': [
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre'
+        ],
+        'TAN': [
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre'
+        ],
+        'LEMON': [
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre'
+        ],
+        'SUN': [
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre'
+        ],
+        'HONEY': [
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre'
+        ],
+        'OCHRE': [
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre'
+        ],
+        'PLATINUM': [
+            'Caramel', 'Brown', 'Gray', 'Platinum', 'Pigeon', 'Ash', 'Soot', 'Aluminum', 'Graphite'
+        ],
+        'PIGEON': [
+            'Caramel', 'Brown', 'Gray', 'Platinum', 'Pigeon', 'Ash', 'Soot', 'Aluminum', 'Graphite'
+        ],
+        'ASH': [
+            'Caramel', 'Brown', 'Gray', 'Platinum', 'Pigeon', 'Ash', 'Soot', 'Aluminum', 'Graphite'
+        ],
+        'SOOT': [
+            'Caramel', 'Brown', 'Gray', 'Platinum', 'Pigeon', 'Ash', 'Soot', 'Aluminum', 'Graphite'
+        ],
+        'ALUMINUM': [
+            'Caramel', 'Brown', 'Gray', 'Platinum', 'Pigeon', 'Ash', 'Soot', 'Aluminum', 'Graphite'
+        ],
+        'GRAPHITE': [
+            'Caramel', 'Brown', 'Gray', 'Platinum', 'Pigeon', 'Ash', 'Soot', 'Aluminum', 'Graphite'
+        ],
+        'BEIGE': [
+            'Brown', 'Caramel', 'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight'
+        ],
+        'CANVAS': [
+            'Brown', 'Caramel', 'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight'
+        ],
+        'DAWN': [
+            'Brown', 'Caramel', 'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight'
+        ],
+        'DARKBEIGE': [
+            'Brown', 'Caramel', 'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight'
+        ],
+        'TAUPE': [
+            'Brown', 'Caramel', 'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight'
+        ],
+        'TWILIGHT': [
+            'Brown', 'Caramel', 'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight'
+        ],
+        'ROSEGOLD': [
+            'Caramel', 'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn', 'Gold',
+            'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight',
+            'Rose', 'Buff', 'Oat', 'Sepia', 'Olive', 'Tawny'
+        ],
+        'BUFF': [
+            'Caramel', 'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn', 'Gold',
+            'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight',
+            'Rose', 'Buff', 'Oat', 'Sepia', 'Olive', 'Tawny'
+        ],
+        'OAT': [
+            'Caramel', 'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn', 'Gold',
+            'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight',
+            'Rose', 'Buff', 'Oat', 'Sepia', 'Olive', 'Tawny'
+        ],
+        'SEPIA': [
+            'Caramel', 'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn', 'Gold',
+            'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight',
+            'Rose', 'Buff', 'Oat', 'Sepia', 'Olive', 'Tawny'
+        ],
+        'OLIVE': [
+            'Caramel', 'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn', 'Gold',
+            'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight',
+            'Rose', 'Buff', 'Oat', 'Sepia', 'Olive', 'Tawny'
+        ],
+        'TAWNY': [
+            'Caramel', 'Brown', 'Brown', 'Pink', 'Ecru', 'Dust', 'Stag', 'Doe', 'Fawn', 'Gold',
+            'Beige', 'Canvas', 'Dawn', 'Dark', 'Taupe', 'Twilight',
+            'Rose', 'Buff', 'Oat', 'Sepia', 'Olive', 'Tawny'
+        ],
+        'PEACH': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red',
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre',
+            'Peach', 'Sandy', 'Coral', 'Apricot', 'Salmon', 'Flame'
+        ],
+        'SANDY': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red',
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre',
+            'Peach', 'Sandy', 'Coral', 'Apricot', 'Salmon', 'Flame'
+        ],
+        'CORAL': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red',
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre',
+            'Peach', 'Sandy', 'Coral', 'Apricot', 'Salmon', 'Flame'
+        ],
+        'APRICOT': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red',
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre',
+            'Peach', 'Sandy', 'Coral', 'Apricot', 'Salmon', 'Flame'
+        ],
+        'SALMON': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red',
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre',
+            'Peach', 'Sandy', 'Coral', 'Apricot', 'Salmon', 'Flame'
+        ],
+        'FLAME': [
+            'Ginger', 'Orange', 'Red', 'Yellow', 'Ember', 'Ginger', 'Orange', 'Marmalade', 'Red',
+            'Cream', 'Cream', 'Light', 'Tan', 'Lemon', 'Sun', 'Honey', 'Ochre',
+            'Peach', 'Sandy', 'Coral', 'Apricot', 'Salmon', 'Flame'
         ]}
 
     eye_prefixes = {
