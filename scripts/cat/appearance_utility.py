@@ -573,11 +573,14 @@ def init_pattern(cat):
         elif cat.pelt.colour in fawn_colours:
             cat.pattern = choice(
                 ['PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR', 'CREAMONE', 'CREAMTWO', 'CREAMTHREE', 'CREAMFOUR'])
-        elif cat.pelt.colour in caramel_colours(
+        elif cat.pelt.colour in caramel_colours:
+            cat.pattern = choice(
                 ['GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR', 'PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR'])
-        elif cat.pelt.colour in taupe_colours(
+        elif cat.pelt.colour in taupe_colours:
+            cat.pattern = choice(
                 ['GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR', 'PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR'])
-        elif cat.pelt.colour in fawntaupe_colours(
+        elif cat.pelt.colour in fawntaupe_colours:
+            cat.pattern = choice(
                 ['GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR', 'PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR'])
         else:
             cat.pattern = None
