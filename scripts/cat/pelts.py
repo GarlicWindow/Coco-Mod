@@ -312,13 +312,13 @@ def choose_pelt(colour=None, white=None, pelt=None, length=None, category=None, 
         pelt = pelt
     if length is None:
         length = choice(pelt_length)
-    if pelt == 'SolidColour':
+    if pelt == 'SingleColour':
         if colour is None and not white:
-            return SolidColour(choice(pelt_colours), length)
+            return SingleColour(choice(pelt_colours), length)
         elif colour is None:
-            return SolidColour("WHITE", length)
+            return SingleColour("WHITE", length)
         else:
-            return SolidColour(colour, length)
+            return SingleColour(colour, length)
     elif pelt == 'TwoColour':
         if colour is None:
             return TwoColour(choice(pelt_c_no_white), length)
