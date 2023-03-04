@@ -2,8 +2,8 @@ from random import choice, randint
 
 
 class SingleColour():
-    name = "SolidColour"
-    sprites = {1: 'solid'}
+    name = "SingleColour"
+    sprites = {1: 'single'}
     white_patches = None
 
     def __init__(self, colour, length):
@@ -16,7 +16,7 @@ class SingleColour():
 
 class TwoColour():
     name = "TwoColour"
-    sprites = {1: 'solid', 2: 'white'}
+    sprites = {1: 'single', 2: 'white'}
 
     def __init__(self, colour, length):
         self.colour = colour
@@ -197,14 +197,14 @@ pelt_c_no_bw = [
     'ROSEGOLD', 'BUFF', 'OAT', 'SEPIA', 'OLIVE', 'TAWNY',
     'PEACH', 'SANDY', 'CORAL', 'APRICOT', 'SALMON', 'FLAME'
 ]
-tortiepatterns = ['tortiesolid', 'tortietabby', 'tortiebengal', 'tortiemarbled', 'tortieticked',
-    'tortiesmoke', 'tortierosette', 'tortiespeckled', 'tortiemackerel', 'tortieclassic',
-    'tortiesokoke', 'tortieagouti']
+tortiepatterns = ['tortiesolid','tortiemarbled', 'tortieticked',
+    'tortierosette', 'tortiespeckled', 'tortiemackerel', 'tortieclassic',
+    'tortieagouti']
 patch_colours = ['PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR', 'GOLDONE', 'GOLDTWO',
     'GOLDTHREE', 'GOLDFOUR', 'GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
     'DARKONE', 'DARKTWO', 'DARKTHREE', 'DARKFOUR', 'CREAMONE', 'CREAMTWO', 'CREAMTHREE', 'CREAMFOUR']
-tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
-    'classic', 'sokoke', 'agouti', 'singlestripe']
+tortiebases = ['single', 'marbled', 'ticked', 'rosetted', 'spotted', 'mackerel',
+    'classic', 'agouti']
 tortiecolours = ["SILVER", "GREY", "DARKGREY", "BLACK", "GHOST", "LIGHTBROWN", "BROWN", "DARKBROWN"]
 
 pelt_length = ["short", "medium", "long"]
@@ -238,8 +238,8 @@ collars = [
 ]
 
 tabbies = ["Ticked", "Mackerel", "Classic", "Agouti"]
-spotted = ["Spotted", "Rosette"]
-plain = ["SolidColour", "TwoColour"]
+spotted = ["Spotted", "Rosetted"]
+plain = ["SingleColour", "TwoColour"]
 exotic = ["Marbled"]
 torties = ["Tortie", "Calico"]
 pelt_categories = [tabbies, spotted, plain, exotic, torties]
@@ -412,12 +412,12 @@ def describe_color(pelt, tortiecolour, tortiepattern, white_patches):
             color_name = color_name + ' agouti'
 
         elif pelt.name == "Tortie":
-            if tortiepattern not in ["tortiesolid", "tortiesmoke"]:
+            if tortiepattern not in ["tortiesolid"]:
                 color_name = color_name + ' torbie'
             else:
                 color_name = color_name + ' tortie'
         elif pelt.name == "Calico":
-            if tortiepattern not in ["tortiesolid", "tortiesmoke"]:
+            if tortiepattern not in ["tortiesolid"]:
                 color_name = color_name + ' tabico'
             else:
                 color_name = color_name + ' calico'
