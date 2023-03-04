@@ -149,9 +149,9 @@ def init_eyes(cat):
                 choice(eye_colours)
             ])
         num = 120
-        if cat.white_patches in [high_white, mostly_white, 'FULLWHITE'] or cat.pelt.colour == 'WHITE':
+        if cat.white_patches in [high_white, mostly_white, 'FULLWHITE']:
             num = num - 90
-        if cat.white_patches == 'FULLWHITE' or cat.pelt.colour == 'WHITE':
+        if cat.white_patches == 'FULLWHITE':
             num -= 10
         if par1:
             if par1.eye_colour2:
@@ -274,8 +274,8 @@ def pelt_inheritance(cat, parents: tuple):
     if torbie:
         # If it is tortie, the chosen pelt above becomes the base pelt.
         chosen_tortie_base = chosen_pelt
-        if chosen_tortie_base in ["TwoColour", "SolidColour"]:
-            chosen_tortie_base = "Solid"
+        if chosen_tortie_base in ["TwoColour", "SingleColour"]:
+            chosen_tortie_base = "Single"
         chosen_tortie_base = chosen_tortie_base.lower()
         chosen_pelt = random.choice(torties)
 
@@ -368,11 +368,11 @@ def pelt_inheritance(cat, parents: tuple):
     chosen_white = random.randint(1, 100) <= chance
 
     # Adjustments to pelt chosen based on if the pelt has white in it or not.
-    if chosen_pelt in ["TwoColour", "SolidColour"]:
+    if chosen_pelt in ["TwoColour", "SingleColour"]:
         if chosen_white:
             chosen_pelt = "TwoColour"
         else:
-            chosen_white = "SolidColour"
+            chosen_white = "SingleColour"
     elif chosen_pelt == "Calico":
         if not chosen_white:
             chosen_pelt = "Tortie"
@@ -403,8 +403,8 @@ def randomize_pelt(cat):
     if torbie:
         # If it is tortie, the chosen pelt above becomes the base pelt.
         chosen_tortie_base = chosen_pelt
-        if chosen_tortie_base in ["TwoColour", "SolidColour"]:
-            chosen_tortie_base = "Solid"
+        if chosen_tortie_base in ["TwoColour", "SingleColour"]:
+            chosen_tortie_base = "Single"
         chosen_tortie_base = chosen_tortie_base.lower()
         chosen_pelt = random.choice(torties)
 
@@ -431,11 +431,11 @@ def randomize_pelt(cat):
     chosen_white = random.randint(1, 100) <= 40
 
     # Adjustments to pelt chosen based on if the pelt has white in it or not.
-    if chosen_pelt in ["TwoColour", "SolidColour"]:
+    if chosen_pelt in ["TwoColour", "SingleColour"]:
         if chosen_white:
             chosen_pelt = "TwoColour"
         else:
-            chosen_white = "SolidColour"
+            chosen_white = "SingleColour"
     elif chosen_pelt == "Calico":
         if not chosen_white:
             chosen_pelt = "Tortie"
@@ -522,30 +522,22 @@ def init_pattern(cat):
         cat.tortiecolour = cat.pelt.colour
         if cat.tortiebase is None:
             cat.tortiebase = choice(tortiebases)
-        if cat.tortiebase == 'tabby':
-            cat.tortiepattern = 'tortietabby'
-        elif cat.tortiebase == 'bengal':
-            cat.tortiepattern = 'tortiebengal'
-        elif cat.tortiebase == 'marbled':
+        if cat.tortiebase == 'marbled':
             cat.tortiepattern = 'tortiemarbled'
         elif cat.tortiebase == 'ticked':
             cat.tortiepattern = 'tortieticked'
-        elif cat.tortiebase == 'rosette':
+        elif cat.tortiebase == 'rosetted':
             cat.tortiepattern = 'tortierosette'
-        elif cat.tortiebase == 'smoke':
-            cat.tortiepattern = 'tortiesmoke'
-        elif cat.tortiebase == 'speckled':
+        elif cat.tortiebase == 'spotted':
             cat.tortiepattern = 'tortiespeckled'
         elif cat.tortiebase == 'mackerel':
             cat.tortiepattern = 'tortiemackerel'
         elif cat.tortiebase == 'classic':
             cat.tortiepattern = 'tortieclassic'
-        elif cat.tortiebase == 'sokoke':
-            cat.tortiepattern = 'tortiesokoke'
         elif cat.tortiebase == 'agouti':
             cat.tortiepattern = 'tortieagouti'
         else:
-            cat.tortiepattern = choice(['tortietabby', 'tortiemackerel', 'tortieclassic'])
+            cat.tortiepattern = choice(['tortiespeckled', 'tortiemackerel', 'tortieclassic'])
     else:
         cat.tortiebase = None
         cat.tortiepattern = None
@@ -583,7 +575,7 @@ def init_pattern(cat):
             cat.pattern = choice(
                 ['GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR', 'PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR'])
         else:
-            cat.pattern = None
+            cat.pattern = 'GOLDONE'
     else:
         cat.pattern = None
 
@@ -706,4 +698,5 @@ def init_tint(cat):
         color_group = Sprites.cat_tints["colour_groups"][cat.pelt.colour]
         possible_tints += Sprites.cat_tints["possible_tints"][color_group]
         cat.tint = choice(possible_tints)
+
 
