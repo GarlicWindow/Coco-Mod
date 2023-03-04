@@ -367,43 +367,43 @@ for a, i in enumerate(['HEART', 'LILTWO', 'GLASS', 'MOORISH', 'SEPIAPOINT', 'MIN
 
 # solid
 for a, i in enumerate(['INK', 'COAL', 'SHADOW', 'EBONY', 'BLACK', 'VOID']):
-    sprites.make_group('cocosolidcolours', (a, 0), f'solid{i}')
-    sprites.make_group('cocosolidextra', (a, 0), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cocosolidcolours', (a, 0), f'single{i}')
+    sprites.make_group('cocosolidextra', (a, 0), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['CHOCOLATE', 'CHESTNUT', 'COCOA', 'UMBER', 'MUD', 'DARKCHOCOLATE']):
-    sprites.make_group('cocosolidcolours', (a, 1), f'solid{i}')
-    sprites.make_group('cocosolidextra', (a, 1), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cocosolidcolours', (a, 1), f'single{i}')
+    sprites.make_group('cocosolidextra', (a, 1), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['CASHEW', 'PECAN', 'ALMOND', 'RUST', 'CINNAMON', 'WALNUT']):
-    sprites.make_group('cocosolidcolours', (a, 2), f'solid{i}')
-    sprites.make_group('cocosolidextra', (a, 2), f'singleextra{i}', sprites_y=2)
-for a, i in enumerate(['YELLOW', 'EMBER', 'GINGER', 'ORANGE', 'MARMALADE', 'RED']):
-    sprites.make_group('cocosolidcolours', (a, 2), f'solid{i}')
+    sprites.make_group('cocosolidcolours', (a, 2), f'single{i}')
     sprites.make_group('cocosolidextra', (a, 2), f'solidextra{i}', sprites_y=2)
+for a, i in enumerate(['YELLOW', 'EMBER', 'GINGER', 'ORANGE', 'MARMALADE', 'RED']):
+    sprites.make_group('cocosolidcolours', (a, 2), f'single{i}')
+    sprites.make_group('cocosolidextra', (a, 2), f'singleextra{i}', sprites_y=2)
 # dilute
 for a, i in enumerate(['CLOUD', 'MIST', 'GRAY', 'BLUE', 'STONE', 'STORM']):
-    sprites.make_group('cocodilutecolours', (a, 0), f'solid{i}')
-    sprites.make_group('cocodiluteextra', (a, 0), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cocodilutecolours', (a, 0), f'single{i}')
+    sprites.make_group('cocodiluteextra', (a, 0), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUSK', 'CEDAR']):
-    sprites.make_group('cocodilutecolours', (a, 1), f'solid{i}')
-    sprites.make_group('cocodiluteextra', (a, 1), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cocodilutecolours', (a, 1), f'single{i}')
+    sprites.make_group('cocodiluteextra', (a, 1), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['PINK', 'ECRU', 'DUST', 'STAG', 'DOE', 'FAWN']):
-    sprites.make_group('cocodilutecolours', (a, 2), f'solid{i}')
-    sprites.make_group('cocodiluteextra', (a, 2), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cocodilutecolours', (a, 2), f'single{i}')
+    sprites.make_group('cocodiluteextra', (a, 2), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['LIGHT', 'TAN', 'LEMON', 'SUN', 'HONEY', 'OCHRE']):
-    sprites.make_group('cocodilutecolours', (a, 2), f'solid{i}')
-    sprites.make_group('cocodiluteextra', (a, 2), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cocodilutecolours', (a, 2), f'single{i}')
+    sprites.make_group('cocodiluteextra', (a, 2), f'singleextra{i}', sprites_y=2)
 # caramel
 for a, i in enumerate(['PLATINUM', 'PIGEON', 'ASH', 'SOOT', 'ALUMINUM', 'GRAPHITE']):
-    sprites.make_group('cococaramelcolours', (a, 0), f'solid{i}')
-    sprites.make_group('cococaramelextra', (a, 0), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cococaramelcolours', (a, 0), f'single{i}')
+    sprites.make_group('cococaramelextra', (a, 0), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['BEIGE', 'CANVAS', 'DAWN', 'DARKBEIGE', 'TAUPE', 'TWILIGHT']):
-    sprites.make_group('cococaramelcolours', (a, 1), f'solid{i}')
-    sprites.make_group('cococaramelextra', (a, 1), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cococaramelcolours', (a, 1), f'single{i}')
+    sprites.make_group('cococaramelextra', (a, 1), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['ROSEGOLD', 'BUFF', 'OAT', 'SEPIA', 'OLIVE', 'TAWNY']):
-    sprites.make_group('cococaramelcolours', (a, 2), f'solid{i}')
-    sprites.make_group('cococaramelextra', (a, 2), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cococaramelcolours', (a, 2), f'single{i}')
+    sprites.make_group('cococaramelextra', (a, 2), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['PEACH', 'SANDY', 'CORAL', 'APRICOT', 'SALMON', 'FLAME']):
-    sprites.make_group('cococaramelcolours', (a, 2), f'solid{i}')
-    sprites.make_group('cococaramelextra', (a, 2), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cococaramelcolours', (a, 2), f'single{i}')
+    sprites.make_group('cococaramelextra', (a, 2), f'singleextra{i}', sprites_y=2)
 # marbled
 for a, i in enumerate(['INK', 'COAL', 'SHADOW', 'EBONY', 'BLACK', 'VOID']):
     sprites.make_group('cocomarbledcolours', (a, 0), f'marbled{i}')
@@ -862,4 +862,5 @@ sprites.make_group('skinextra', (5, 2), 'skinextraLIGHTBLUE', sprites_y=2)
 # tiles.make_group('dithered', (1, 0), 'terraintwo')
 
 sprites.load_scars()
+
 
