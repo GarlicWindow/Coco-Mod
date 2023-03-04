@@ -374,7 +374,7 @@ for a, i in enumerate(['CHOCOLATE', 'CHESTNUT', 'COCOA', 'UMBER', 'MUD', 'DARKCH
     sprites.make_group('cocosolidextra', (a, 1), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['CASHEW', 'PECAN', 'ALMOND', 'RUST', 'CINNAMON', 'WALNUT']):
     sprites.make_group('cocosolidcolours', (a, 2), f'single{i}')
-    sprites.make_group('cocosolidextra', (a, 2), f'solidextra{i}', sprites_y=2)
+    sprites.make_group('cocosolidextra', (a, 2), f'singleextra{i}', sprites_y=2)
 for a, i in enumerate(['YELLOW', 'EMBER', 'GINGER', 'ORANGE', 'MARMALADE', 'RED']):
     sprites.make_group('cocosolidcolours', (a, 2), f'single{i}')
     sprites.make_group('cocosolidextra', (a, 2), f'singleextra{i}', sprites_y=2)
