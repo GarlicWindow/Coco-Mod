@@ -1,9 +1,9 @@
 from random import choice
 
 
-class SingleColour():
-    name = "SingleColour"
-    sprites = {1: 'single'}
+class SolidColour():
+    name = "SolidColour"
+    sprites = {1: 'solid'}
     white_patches = None
 
     def __init__(self, colour, length):
@@ -16,7 +16,7 @@ class SingleColour():
 
 class TwoColour():
     name = "TwoColour"
-    sprites = {1: 'single', 2: 'white'}
+    sprites = {1: 'solid', 2: 'white'}
 
     def __init__(self, colour, length):
         self.colour = colour
@@ -25,21 +25,6 @@ class TwoColour():
 
     def __repr__(self):
         return f"white and {self.colour}{self.length}"
-
-class Tabby():
-    name = "Tabby"
-    sprites = {1: 'tabby', 2: 'white'}
-
-    def __init__(self, colour, white, length):
-        self.white = white  # boolean; does cat have white on it or no
-        self.colour = colour
-        self.length = length
-
-    def __repr__(self):
-        if self.white:
-            return f"white and {self.colour}{self.length} tabby"
-        else:
-            return self.colour + self.length + " tabby"
 
 class Marbled():
     name = "Marbled"
@@ -56,9 +41,9 @@ class Marbled():
         else:
             return self.colour + self.length + " marbled"
 
-class Rosette():
-    name = "Rosette"
-    sprites = {1: 'rosette', 2: 'white'}
+class Rosetted():
+    name = "Rosetted"
+    sprites = {1: 'rosetted', 2: 'white'}
 
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -67,24 +52,9 @@ class Rosette():
 
     def __repr__(self):
         if self.white:
-            return f"white and {self.colour}{self.length} rosette"
+            return f"white and {self.colour}{self.length} rosetted"
         else:
-            return self.colour + self.length + " rosette"
-
-class Smoke():
-    name = "Smoke"
-    sprites = {1: 'smoke', 2: 'white'}
-
-    def __init__(self, colour, white, length):
-        self.white = white  # boolean; does cat have white on it or no
-        self.colour = colour
-        self.length = length
-
-    def __repr__(self):
-        if self.white:
-            return f"white and {self.colour}{self.length} smoke"
-        else:
-            return self.colour + self.length + " smoke"
+            return self.colour + self.length + " rosetted"
 
 class Ticked():
     name = "Ticked"
@@ -101,9 +71,9 @@ class Ticked():
         else:
             return self.colour + self.length + " ticked"
 
-class Speckled():
-    name = "Speckled"
-    sprites = {1: 'speckled', 2: 'white'}
+class Spotted():
+    name = "Spotted"
+    sprites = {1: 'spotted', 2: 'white'}
 
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -111,23 +81,9 @@ class Speckled():
         self.length = length
     def __repr__(self):
         if self.white:
-            return f"white and {self.colour} speckled{self.length}"
+            return f"white and {self.colour} spotted{self.length}"
         else:
-            return f"{self.colour} speckled{self.length}"
-
-class Bengal():
-    name = "Bengal"
-    sprites = {1: 'bengal', 2: 'white'}
-
-    def __init__(self, colour, white, length):
-        self.white = white  # boolean; does cat have white on it or no
-        self.colour = colour
-        self.length = length
-    def __repr__(self):
-        if self.white:
-            return f"white and {self.colour} bengal{self.length}"
-        else:
-            return f"{self.colour} bengal{self.length}"
+            return f"{self.colour} spotted{self.length}"
 
 class Mackerel():
     name = "Mackerel"
@@ -157,20 +113,6 @@ class Classic():
         else:
             return f"{self.colour} classic tabby{self.length}"
 
-class Sokoke():
-    name = "Sokoke"
-    sprites = {1: 'sokoke', 2: 'white'}
-
-    def __init__(self, colour, white, length):
-        self.white = white  # boolean; does cat have white on it or no
-        self.colour = colour
-        self.length = length
-    def __repr__(self):
-        if self.white:
-            return f"white and {self.colour} sokoke tabby{self.length}"
-        else:
-            return f"{self.colour} sokoke tabby{self.length}"
-
 class Agouti():
     name = "Agouti"
     sprites = {1: 'agouti', 2: 'white'}
@@ -184,20 +126,6 @@ class Agouti():
             return f"white and {self.colour} agouti{self.length}"
         else:
             return f"{self.colour} agouti{self.length}"
-
-class Singlestripe():
-    name = "Singlestripe"
-    sprites = {1: 'singlestripe', 2: 'white'}
-
-    def __init__(self, colour, white, length):
-        self.white = white  # boolean; does cat have white on it or no
-        self.colour = colour
-        self.length = length
-    def __repr__(self):
-        if self.white:
-            return f"white and {self.colour} singlestripe{self.length}"
-        else:
-            return f"{self.colour} singlestripe{self.length}"
 
 class Tortie():
     name = "Tortie"
@@ -229,31 +157,61 @@ class Calico():
 
 # ATTRIBUTES, including non-pelt related
 pelt_colours = [
-    'WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'PALEGINGER',
-    'GOLDEN', 'GINGER', 'DARKGINGER', 'CREAM', 'LIGHTBROWN', 'BROWN', 'DARKBROWN',
-    'BLACK'
+    'EBONY', 'COAL', 'SHADOW', 'CROW', 'RAVEN', 'BLACK',
+    'TWIG', 'CHESTNUT', 'COCOA', 'CHOCOLATE', 'UMBER', 'DARKCHOCOLATE',
+    'OAK', 'CEDAR', 'AUTUMN', 'RUST', 'CINNAMON', 'PINE',
+    'HONEY', 'MARIGOLD', 'EMBER', 'ORANGE', 'GINGER', 'RED',
+    'RAIN', 'MIST', 'GRAY', 'BLUE', 'SLATE', 'STORM',
+    'HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUST', 'MOUSE',
+    'PINK', 'SHREW', 'STAG', 'DOE', 'FAWN', 'SAND',
+    'BUFF', 'CREAM', 'DAISY', 'SUN', 'TAN', 'OCHRE',
+    'ASH', 'BIRCH', 'PIGEON', 'WORM', 'CARAMEL', 'GRAVEL',
+    'BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK',
+    'PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE',
+    'SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME'
+
 ]
 pelt_c_no_white = [
-    'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'PALEGINGER', 'GOLDEN',
-    'GINGER', 'DARKGINGER', 'CREAM', 'LIGHTBROWN', 'BROWN', 'DARKBROWN', 'BLACK'
+    'EBONY', 'COAL', 'SHADOW', 'CROW', 'RAVEN', 'BLACK',
+    'TWIG', 'CHESTNUT', 'COCOA', 'CHOCOLATE', 'UMBER', 'DARKCHOCOLATE',
+    'OAK', 'CEDAR', 'AUTUMN', 'RUST', 'CINNAMON', 'PINE',
+    'HONEY', 'MARIGOLD', 'EMBER', 'ORANGE', 'GINGER', 'RED',
+    'RAIN', 'MIST', 'GRAY', 'BLUE', 'SLATE', 'STORM',
+    'HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUST', 'MOUSE',
+    'PINK', 'SHREW', 'STAG', 'DOE', 'FAWN', 'SAND',
+    'BUFF', 'CREAM', 'DAISY', 'SUN', 'TAN', 'OCHRE',
+    'ASH', 'BIRCH', 'PIGEON', 'WORM', 'CARAMEL', 'GRAVEL',
+    'BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK',
+    'PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE',
+    'SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME'
 ]
 pelt_c_no_bw = [
-    'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'PALEGINGER', 'GOLDEN', 'GINGER',
-    'DARKGINGER', 'CREAM', 'LIGHTBROWN', 'BROWN', 'DARKBROWN'
+    'TWIG', 'CHESTNUT', 'COCOA', 'CHOCOLATE', 'UMBER', 'DARKCHOCOLATE',
+    'OAK', 'CEDAR', 'AUTUMN', 'RUST', 'CINNAMON', 'PINE',
+    'HONEY', 'MARIGOLD', 'EMBER', 'ORANGE', 'GINGER', 'RED',
+    'RAIN', 'MIST', 'GRAY', 'BLUE', 'SLATE', 'STORM',
+    'HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUST', 'MOUSE',
+    'PINK', 'SHREW', 'STAG', 'DOE', 'FAWN', 'SAND',
+    'BUFF', 'CREAM', 'DAISY', 'SUN', 'TAN', 'OCHRE',
+    'ASH', 'BIRCH', 'PIGEON', 'WORM', 'CARAMEL', 'GRAVEL',
+    'BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK',
+    'PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE',
+    'SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME'
 ]
-tortiepatterns = ['tortiesolid', 'tortietabby', 'tortiebengal', 'tortiemarbled', 'tortieticked',
-    'tortiesmoke', 'tortierosette', 'tortiespeckled', 'tortiemackerel', 'tortieclassic',
-    'tortiesokoke', 'tortieagouti']
-patch_colours = ['PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR', 'GOLDONE', 'GOLDTWO',
-    'GOLDTHREE', 'GOLDFOUR', 'GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
-    'DARKONE', 'DARKTWO', 'DARKTHREE', 'DARKFOUR', 'CREAMONE', 'CREAMTWO', 'CREAMTHREE', 'CREAMFOUR']
-tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
-    'classic', 'sokoke', 'agouti', 'singlestripe']
+tortiepatterns = ['tortiesolid', 'tortiemackerel', 'tortieclassic', 'tortiespotted',
+                  'tortieticked','tortieagouti',
+                  'tortiemarbled', 'tortierosette']
+patch_colours = ['PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR',
+                 'GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR',
+                 'GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
+                 'DARKONE', 'DARKTWO', 'DARKTHREE', 'DARKFOUR',
+                 'CREAMONE', 'CREAMTWO', 'CREAMTHREE', 'CREAMFOUR']
+tortiebases = ['solid', 'mackerel', 'classic', 'spotted', 'ticked', 'agouti', 'marbled', 'rosetted']
 tortiecolours = ["SILVER", "GREY", "DARKGREY", "BLACK", "GHOST", "LIGHTBROWN", "BROWN", "DARKBROWN"]
 
 pelt_length = ["short", "medium", "long"]
 eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
-    'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'BLUE2', 'SUNLITICE', 'GREENYELLOW']
+               'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'BLUE2', 'SUNLITICE', 'GREENYELLOW']
 yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW']
 blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'BLUE2', 'SUNLITICE', 'GREY']
 green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL']
@@ -283,39 +241,58 @@ collars = [
     "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
 ]
 
-tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
-spotted = ["Speckled", "Rosette"]
-plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe"]
-exotic = ["Bengal", "Marbled"]
+tabbies = ["Mackerel", "Classic", "Ticked", "Agouti"]
+spotted = ["Spotted", "Rosetted"]
+plain = ["SolidColour", "TwoColour"]
+exotic = ["Marbled"]
 torties = ["Tortie", "Calico"]
 pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
 # SPRITE NAMES
-single_colours = [
-    'WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'PALEGINGER',
-    'GOLDEN', 'GINGER', 'DARKGINGER', 'CREAM', 'LIGHTBROWN', 'BROWN', 'DARKBROWN', 'BLACK'
+solid_colours = [
+    'EBONY', 'COAL', 'SHADOW', 'CROW', 'RAVEN', 'BLACK',
+    'TWIG', 'CHESTNUT', 'COCOA', 'CHOCOLATE', 'UMBER', 'DARKCHOCOLATE',
+    'OAK', 'CEDAR', 'AUTUMN', 'RUST', 'CINNAMON', 'PINE',
+    'HONEY', 'MARIGOLD', 'EMBER', 'ORANGE', 'GINGER', 'RED',
+    'RAIN', 'MIST', 'GRAY', 'BLUE', 'SLATE', 'STORM',
+    'HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUST', 'MOUSE',
+    'PINK', 'SHREW', 'STAG', 'DOE', 'FAWN', 'SAND',
+    'BUFF', 'CREAM', 'DAISY', 'SUN', 'TAN', 'OCHRE',
+    'ASH', 'BIRCH', 'PIGEON', 'WORM', 'CARAMEL', 'GRAVEL',
+    'BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK',
+    'PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE',
+    'SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME'
 ]
-ginger_colours = ['PALEGINGER', 'GOLDEN', 'GINGER', 'DARKGINGER', 'CREAM']
-black_colours = ['GREY', 'DARKGREY', 'GHOST', 'BLACK']
-white_colours = ['WHITE', 'PALEGREY', 'SILVER']
-brown_colours = ['LIGHTBROWN', 'BROWN', 'DARKBROWN']
-colour_categories = [ginger_colours, black_colours, white_colours, brown_colours]
+ginger_colours = ['HONEY', 'MARIGOLD', 'EMBER', 'ORANGE', 'GINGER', 'RED']
+black_colours = ['EBONY', 'COAL', 'SHADOW', 'CROW', 'RAVEN', 'BLACK']
+chocolate_colours = ['TWIG', 'CHESTNUT', 'COCOA', 'CHOCOLATE', 'UMBER', 'DARKCHOCOLATE']
+cinnamon_colours = ['OAK', 'CEDAR', 'AUTUMN', 'RUST', 'CINNAMON', 'PINE']
+cream_colours = ['BUFF', 'CREAM', 'DAISY', 'SUN', 'TAN', 'OCHRE']
+gray_colours = ['RAIN', 'MIST', 'GRAY', 'BLUE', 'SLATE', 'STORM']
+lilac_colours = ['HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUST', 'MOUSE']
+fawn_colours = ['PINK', 'SHREW', 'STAG', 'DOE', 'FAWN', 'SAND']
+apricot_colours = ['SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME']
+caramel_colours = ['ASH', 'BIRCH', 'PIGEON', 'WORM', 'CARAMEL', 'GRAVEL']
+taupe_colours = ['BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK']
+fawntaupe_colours = ['PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE']
+colour_categories = [ginger_colours, black_colours, chocolate_colours, cinnamon_colours,
+                     cream_colours, gray_colours, lilac_colours, fawn_colours,
+                    apricot_colours, caramel_colours, taupe_colours, fawntaupe_colours]
 eye_sprites = [
     'YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'BLUEYELLOW', 'BLUEGREEN',
     'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'BLUE2', 
     'SUNLITICE', 'GREENYELLOW'
 ]
 little_white = ['LITTLE', 'LITTLECREAMY', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS', 
-    'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY', 'LUNA', 'EXTRA']
-mid_white = ['TUXEDO', 'TUXEDOCREAMY', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR',
-    'WINGS']
-high_white = ['ANY', 'ANYCREAMY', 'ANY2', 'ANY2CREAMY', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTS2', 
-    'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
-    'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED']
+                'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY', 'LUNA', 'EXTRA']
+mid_white = ['TUXEDO', 'TUXEDOCREAMY', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS']
+high_white = ['ANY', 'ANYCREAMY', 'ANY2', 'ANY2CREAMY', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTS2',
+              'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
+              'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED']
 mostly_white = ['VAN', 'VANCREAMY', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
-    'CHESTSPECK', 'BLACKSTAR']
+                'CHESTSPECK', 'BLACKSTAR']
 point_markings = ['COLOURPOINT', 'COLOURPOINTCREAMY', 'RAGDOLL', 'KARPATI', 'SEPIAPOINT', 'MINKPOINT', 
-    'SEALPOINT']
+                  'SEALPOINT']
 vit = ['VITILIGO', 'VITILIGO2']
 white_sprites = [
     little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']
@@ -338,25 +315,18 @@ def choose_pelt(colour=None, white=None, pelt=None, length=None, category=None, 
         pelt = pelt
     if length is None:
         length = choice(pelt_length)
-    if pelt == 'SingleColour':
+    if pelt == 'SolidColour':
         if colour is None and not white:
-            return SingleColour(choice(pelt_colours), length)
+            return SolidColour(choice(pelt_colours), length)
         elif colour is None:
-            return SingleColour("WHITE", length)
+            return SolidColour("WHITE", length)
         else:
-            return SingleColour(colour, length)
+            return SolidColour(colour, length)
     elif pelt == 'TwoColour':
         if colour is None:
             return TwoColour(choice(pelt_c_no_white), length)
         else:
             return TwoColour(colour, length)
-    elif pelt == 'Tabby':
-        if colour is None and white is None:
-            return Tabby(choice(pelt_colours), choice([False, True]), length)
-        elif colour is None:
-            return Tabby(choice(pelt_colours), white, length)
-        else:
-            return Tabby(colour, white, length)
     elif pelt == 'Marbled':
         if colour is None and white is None:
             return Marbled(choice(pelt_colours), choice([False, True]), length)
@@ -364,20 +334,13 @@ def choose_pelt(colour=None, white=None, pelt=None, length=None, category=None, 
             return Marbled(choice(pelt_colours), white, length)
         else:
             return Marbled(colour, white, length)
-    elif pelt == 'Rosette':
+    elif pelt == 'Rosetted':
         if colour is None and white is None:
-            return Rosette(choice(pelt_colours), choice([False, True]), length)
+            return Rosetted(choice(pelt_colours), choice([False, True]), length)
         elif colour is None:
-            return Rosette(choice(pelt_colours), white, length)
+            return Rosetted(choice(pelt_colours), white, length)
         else:
-            return Rosette(colour, white, length)
-    elif pelt == 'Smoke':
-        if colour is None and white is None:
-            return Smoke(choice(pelt_colours), choice([False, True]), length)
-        elif colour is None:
-            return Smoke(choice(pelt_colours), white, length)
-        else:
-            return Smoke(colour, white, length)
+            return Rosetted(colour, white, length)
     elif pelt == 'Ticked':
         if colour is None and white is None:
             return Ticked(choice(pelt_colours), choice([False, True]), length)
@@ -385,22 +348,14 @@ def choose_pelt(colour=None, white=None, pelt=None, length=None, category=None, 
             return Ticked(choice(pelt_colours), white, length)
         else:
             return Ticked(colour, white, length)
-    elif pelt == 'Speckled':
+    elif pelt == 'Spotted':
         if colour is None and white is None:
-            return Speckled(choice(pelt_colours), choice([False, True]),
+            return Spotted(choice(pelt_colours), choice([False, True]),
                             length)
         elif colour is None:
-            return Speckled(choice(pelt_colours), white, length)
+            return Spotted(choice(pelt_colours), white, length)
         else:
-            return Speckled(colour, white, length)
-    elif pelt == 'Bengal':
-        if colour is None and white is None:
-            return Bengal(choice(pelt_colours), choice([False, True]),
-                             length)
-        elif colour is None:
-            return Bengal(choice(pelt_colours), white, length)
-        else:
-            return Bengal(colour, white, length)
+            return Spotted(colour, white, length)
     elif pelt == 'Mackerel':
         if colour is None and white is None:
             return Mackerel(choice(pelt_colours), choice([False, True]),
@@ -417,14 +372,6 @@ def choose_pelt(colour=None, white=None, pelt=None, length=None, category=None, 
             return Classic(choice(pelt_colours), white, length)
         else:
             return Classic(colour, white, length)
-    elif pelt == 'Sokoke':
-        if colour is None and white is None:
-            return Sokoke(choice(pelt_colours), choice([False, True]),
-                             length)
-        elif colour is None:
-            return Sokoke(choice(pelt_colours), white, length)
-        else:
-            return Sokoke(colour, white, length)
     elif pelt == 'Agouti':
         if colour is None and white is None:
             return Agouti(choice(pelt_colours), choice([False, True]),
@@ -433,14 +380,6 @@ def choose_pelt(colour=None, white=None, pelt=None, length=None, category=None, 
             return Agouti(choice(pelt_colours), white, length)
         else:
             return Agouti(colour, white, length)
-    elif pelt == 'Singlestripe':
-        if colour is None and white is None:
-            return Singlestripe(choice(pelt_colours), choice([False, True]),
-                             length)
-        elif colour is None:
-            return Singlestripe(choice(pelt_colours), white, length)
-        else:
-            return Singlestripe(colour, white, length)
     elif pelt == 'Tortie':
         if white is None:
             return Tortie(colour, choice([False, True]), length)
@@ -454,50 +393,30 @@ def describe_color(pelt, tortiecolour, tortiepattern, white_patches):
         color_name = str(pelt.colour).lower()
         if tortiecolour is not None:
             color_name = str(tortiecolour).lower()
-        if color_name == 'palegrey':
-            color_name = 'pale grey'
-        elif color_name == 'darkgrey':
-            color_name = 'dark grey'
-        elif color_name == 'paleginger':
-            color_name = 'pale ginger'
-        elif color_name == 'darkginger':
-            color_name = 'dark ginger'
-        elif color_name == 'lightbrown':
-            color_name = 'light brown'
-        elif color_name == 'darkbrown':
-            color_name = 'dark brown'
-        if pelt.name == "Tabby":
-            color_name = color_name + ' tabby'
-        elif pelt.name == "Speckled":
-            color_name = color_name + ' speckled'
-        elif pelt.name == "Bengal":
-            color_name = color_name + ' bengal'
-        elif pelt.name == "Marbled":
-            color_name = color_name + ' marbled tabby'
-        elif pelt.name == "Rosette":
-            color_name = color_name + ' rosetted'
-        elif pelt.name == "Ticked":
-            color_name = color_name + ' ticked tabby'
-        elif pelt.name == "Smoke":
-            color_name = color_name + ' smoke'
+        if color_name == 'darkchocolate':
+            color_name = 'dark chocolate'
         elif pelt.name == "Mackerel":
             color_name = color_name + ' mackerel tabby'
         elif pelt.name == "Classic":
             color_name = color_name + ' classic tabby'
-        elif pelt.name == "Sokoke":
-            color_name = color_name + ' sokoke tabby'
+        elif pelt.name == "Spotted":
+            color_name = color_name + ' spotted'
+        elif pelt.name == "Ticked":
+            color_name = color_name + ' ticked tabby'
         elif pelt.name == "Agouti":
             color_name = color_name + ' agouti'
-        elif pelt.name == "Singlestripe":
-            color_name = color_name + ', with a dorsal stripe,'
+        elif pelt.name == "Marbled":
+            color_name = color_name + ' marbled tabby'
+        elif pelt.name == "Rosetted":
+            color_name = color_name + ' rosetted'
 
         elif pelt.name == "Tortie":
-            if tortiepattern not in ["tortiesolid", "tortiesmoke"]:
+            if tortiepattern not in ["tortiesolid"]:
                 color_name = color_name + ' torbie'
             else:
                 color_name = color_name + ' tortie'
         elif pelt.name == "Calico":
-            if tortiepattern not in ["tortiesolid", "tortiesmoke"]:
+            if tortiepattern not in ["tortiesolid"]:
                 color_name = color_name + ' tabico'
             else:
                 color_name = color_name + ' calico'
@@ -515,7 +434,8 @@ def describe_color(pelt, tortiecolour, tortiepattern, white_patches):
             # colorpoint
             elif white_patches in point_markings:
                 color_name = color_name + ' point'
-                if color_name == 'dark ginger point' or color_name == 'ginger point':
+                if color_name == 'honey point' or color_name == 'marigold point' or color_name == 'ember point'
+                 or color_name == 'orange point'  or color_name == 'ginger point'  or color_name == 'red point':
                     color_name = 'flame point'
             # vitiligo
             elif white_patches in vit:
