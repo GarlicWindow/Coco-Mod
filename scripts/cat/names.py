@@ -50,66 +50,366 @@ class Name():
     ]
 
     colour_prefixes = {
+        'EBONY': [
+            'Ant', 'Bat', 'Beetle', 'Black', 'Coal', 'Coot', 'Cormorant', 'Crow', 'Dark', 'Dipper',
+            'Ebony', 'Fly', 'Falcon', 'Ivy', 'Juniper', 'Mole', 'Night', 'Privet', 'Rat', 'Raven',
+            'Rook', 'Sedge', 'Shade', 'Shadow', 'Sloe', 'Slug', 'Soot', 'Spider', 'Starling', 'Swift'
+        ],
+        'COAL': [
+            'Ant', 'Bat', 'Beetle', 'Black', 'Coal', 'Coot', 'Cormorant', 'Crow', 'Dark', 'Dipper',
+            'Ebony', 'Fly', 'Falcon', 'Ivy', 'Juniper', 'Mole', 'Night', 'Privet', 'Rat', 'Raven',
+            'Rook', 'Sedge', 'Shade', 'Shadow', 'Sloe', 'Slug', 'Soot', 'Spider', 'Starling', 'Swift'
+        ],
+        'SHADOW': [
+            'Ant', 'Bat', 'Beetle', 'Black', 'Coal', 'Coot', 'Cormorant', 'Crow', 'Dark', 'Dipper',
+            'Ebony', 'Fly', 'Falcon', 'Ivy', 'Juniper', 'Mole', 'Night', 'Privet', 'Rat', 'Raven',
+            'Rook', 'Sedge', 'Shade', 'Shadow', 'Sloe', 'Slug', 'Soot', 'Spider', 'Starling', 'Swift'
+        ],
+        'CROW': [
+            'Ant', 'Bat', 'Beetle', 'Black', 'Coal', 'Coot', 'Cormorant', 'Crow', 'Dark', 'Dipper',
+            'Ebony', 'Fly', 'Falcon', 'Ivy', 'Juniper', 'Mole', 'Night', 'Privet', 'Rat', 'Raven',
+            'Rook', 'Sedge', 'Shade', 'Shadow', 'Sloe', 'Slug', 'Soot', 'Spider', 'Starling', 'Swift'
+        ],
+        'RAVEN': [
+            'Ant', 'Bat', 'Beetle', 'Black', 'Coal', 'Coot', 'Cormorant', 'Crow', 'Dark', 'Dipper',
+            'Ebony', 'Fly', 'Falcon', 'Ivy', 'Juniper', 'Mole', 'Night', 'Privet', 'Rat', 'Raven',
+            'Rook', 'Sedge', 'Shade', 'Shadow', 'Sloe', 'Slug', 'Soot', 'Spider', 'Starling', 'Swift'
+        ],
         'BLACK': [
             'Ant', 'Bat', 'Beetle', 'Black', 'Coal', 'Coot', 'Cormorant', 'Crow', 'Dark', 'Dipper',
             'Ebony', 'Fly', 'Falcon', 'Ivy', 'Juniper', 'Mole', 'Night', 'Privet', 'Rat', 'Raven',
             'Rook', 'Sedge', 'Shade', 'Shadow', 'Sloe', 'Slug', 'Soot', 'Spider', 'Starling', 'Swift'
+        ],
+        'TWIG': [
+            'Alder', 'Bat', 'Beetle', 'Bramble', 'Briar', 'Brown', 'Buzzard', 'Chestnut', 'Cypress', 'Dark',
+            'Deer', 'Dipper', 'Duck', 'Eagle', 'Eel', 'Elm', 'Falcon', 'Frog', 'Goose', 'Ivy',
+            'Lamprey', 'Lizard', 'Mink', 'Otter', 'Rat', 'Sedge', 'Spider', 'Twig', 'Umber', 'Weasel'
+        ],
+        'CHESTNUT': [
+            'Alder', 'Bat', 'Beetle', 'Bramble', 'Briar', 'Brown', 'Buzzard', 'Chestnut', 'Cypress', 'Dark',
+            'Deer', 'Dipper', 'Duck', 'Eagle', 'Eel', 'Elm', 'Falcon', 'Frog', 'Goose', 'Ivy',
+            'Lamprey', 'Lizard', 'Mink', 'Otter', 'Rat', 'Sedge', 'Spider', 'Twig', 'Umber', 'Weasel'
+        ],
+        'COCOA': [
+            'Alder', 'Bat', 'Beetle', 'Bramble', 'Briar', 'Brown', 'Buzzard', 'Chestnut', 'Cypress', 'Dark',
+            'Deer', 'Dipper', 'Duck', 'Eagle', 'Eel', 'Elm', 'Falcon', 'Frog', 'Goose', 'Ivy',
+            'Lamprey', 'Lizard', 'Mink', 'Otter', 'Rat', 'Sedge', 'Spider', 'Twig', 'Umber', 'Weasel'
         ],
         'CHOCOLATE': [
             'Alder', 'Bat', 'Beetle', 'Bramble', 'Briar', 'Brown', 'Buzzard', 'Chestnut', 'Cypress', 'Dark',
             'Deer', 'Dipper', 'Duck', 'Eagle', 'Eel', 'Elm', 'Falcon', 'Frog', 'Goose', 'Ivy',
             'Lamprey', 'Lizard', 'Mink', 'Otter', 'Rat', 'Sedge', 'Spider', 'Twig', 'Umber', 'Weasel'
         ],
+        'UMBER': [
+            'Alder', 'Bat', 'Beetle', 'Bramble', 'Briar', 'Brown', 'Buzzard', 'Chestnut', 'Cypress', 'Dark',
+            'Deer', 'Dipper', 'Duck', 'Eagle', 'Eel', 'Elm', 'Falcon', 'Frog', 'Goose', 'Ivy',
+            'Lamprey', 'Lizard', 'Mink', 'Otter', 'Rat', 'Sedge', 'Spider', 'Twig', 'Umber', 'Weasel'
+        ],
+        'DARKCHOCOLATE': [
+            'Alder', 'Bat', 'Beetle', 'Bramble', 'Briar', 'Brown', 'Buzzard', 'Chestnut', 'Cypress', 'Dark',
+            'Deer', 'Dipper', 'Duck', 'Eagle', 'Eel', 'Elm', 'Falcon', 'Frog', 'Goose', 'Ivy',
+            'Lamprey', 'Lizard', 'Mink', 'Otter', 'Rat', 'Sedge', 'Spider', 'Twig', 'Umber', 'Weasel'
+        ],
+        'OAK': [
+            'Acorn', 'Argus', 'Autumn','Bat', 'Bramble', 'Briar', 'Brown', 'Cedar', 'Cinnamon', 'Deer',
+            'Duck', 'Falcon', 'Grouse', 'Hare', 'Harrier', 'Hazel', 'Kestral', 'Linnet', 'Mouse', 'Moth',
+            'Muntjac', 'Oak', 'Owl', 'Pine', 'Rail', 'Rat', 'Rust', 'Sedge', 'Sparrow', 'Whinchat'
+        ],
+        'CEDAR': [
+            'Acorn', 'Argus', 'Autumn','Bat', 'Bramble', 'Briar', 'Brown', 'Cedar', 'Cinnamon', 'Deer',
+            'Duck', 'Falcon', 'Grouse', 'Hare', 'Harrier', 'Hazel', 'Kestral', 'Linnet', 'Mouse', 'Moth',
+            'Muntjac', 'Oak', 'Owl', 'Pine', 'Rail', 'Rat', 'Rust', 'Sedge', 'Sparrow', 'Whinchat'
+        ],
+        'AUTUMN': [
+            'Acorn', 'Argus', 'Autumn','Bat', 'Bramble', 'Briar', 'Brown', 'Cedar', 'Cinnamon', 'Deer',
+            'Duck', 'Falcon', 'Grouse', 'Hare', 'Harrier', 'Hazel', 'Kestral', 'Linnet', 'Mouse', 'Moth',
+            'Muntjac', 'Oak', 'Owl', 'Pine', 'Rail', 'Rat', 'Rust', 'Sedge', 'Sparrow', 'Whinchat'
+        ],
+        'RUST': [
+            'Acorn', 'Argus', 'Autumn','Bat', 'Bramble', 'Briar', 'Brown', 'Cedar', 'Cinnamon', 'Deer',
+            'Duck', 'Falcon', 'Grouse', 'Hare', 'Harrier', 'Hazel', 'Kestral', 'Linnet', 'Mouse', 'Moth',
+            'Muntjac', 'Oak', 'Owl', 'Pine', 'Rail', 'Rat', 'Rust', 'Sedge', 'Sparrow', 'Whinchat'
+        ],
         'CINNAMON': [
             'Acorn', 'Argus', 'Autumn','Bat', 'Bramble', 'Briar', 'Brown', 'Cedar', 'Cinnamon', 'Deer',
             'Duck', 'Falcon', 'Grouse', 'Hare', 'Harrier', 'Hazel', 'Kestral', 'Linnet', 'Mouse', 'Moth',
             'Muntjac', 'Oak', 'Owl', 'Pine', 'Rail', 'Rat', 'Rust', 'Sedge', 'Sparrow', 'Whinchat'
+        ],
+        'PINE': [
+            'Acorn', 'Argus', 'Autumn','Bat', 'Bramble', 'Briar', 'Brown', 'Cedar', 'Cinnamon', 'Deer',
+            'Duck', 'Falcon', 'Grouse', 'Hare', 'Harrier', 'Hazel', 'Kestral', 'Linnet', 'Mouse', 'Moth',
+            'Muntjac', 'Oak', 'Owl', 'Pine', 'Rail', 'Rat', 'Rust', 'Sedge', 'Sparrow', 'Whinchat'
+        ],
+        'HONEY': [
+            'Ant', 'Apple', 'Ash', 'Asphodel', 'Brambling', 'Chanterelle', 'Cherry', 'Deer', 'Ember', 'Fire',
+            'Fox', 'Fritillary', 'Frog', 'Ginger', 'Honey', 'Kestral', 'Larch', 'Linnet', 'Marigold', 'Moth',
+            'Muntjac', 'Orange', 'Pheasant', 'Plum', 'Poppy', 'Red', 'Robin', 'Snail', 'Viper', 'Weevil'
+        ],
+        'MARIGOLD': [
+            'Ant', 'Apple', 'Ash', 'Asphodel', 'Brambling', 'Chanterelle', 'Cherry', 'Deer', 'Ember', 'Fire',
+            'Fox', 'Fritillary', 'Frog', 'Ginger', 'Honey', 'Kestral', 'Larch', 'Linnet', 'Marigold', 'Moth',
+            'Muntjac', 'Orange', 'Pheasant', 'Plum', 'Poppy', 'Red', 'Robin', 'Snail', 'Viper', 'Weevil'
+        ],
+        'EMBER': [
+            'Ant', 'Apple', 'Ash', 'Asphodel', 'Brambling', 'Chanterelle', 'Cherry', 'Deer', 'Ember', 'Fire',
+            'Fox', 'Fritillary', 'Frog', 'Ginger', 'Honey', 'Kestral', 'Larch', 'Linnet', 'Marigold', 'Moth',
+            'Muntjac', 'Orange', 'Pheasant', 'Plum', 'Poppy', 'Red', 'Robin', 'Snail', 'Viper', 'Weevil'
+        ],
+        'ORANGE': [
+            'Ant', 'Apple', 'Ash', 'Asphodel', 'Brambling', 'Chanterelle', 'Cherry', 'Deer', 'Ember', 'Fire',
+            'Fox', 'Fritillary', 'Frog', 'Ginger', 'Honey', 'Kestral', 'Larch', 'Linnet', 'Marigold', 'Moth',
+            'Muntjac', 'Orange', 'Pheasant', 'Plum', 'Poppy', 'Red', 'Robin', 'Snail', 'Viper', 'Weevil'
         ],
         'GINGER': [
             'Ant', 'Apple', 'Ash', 'Asphodel', 'Brambling', 'Chanterelle', 'Cherry', 'Deer', 'Ember', 'Fire',
             'Fox', 'Fritillary', 'Frog', 'Ginger', 'Honey', 'Kestral', 'Larch', 'Linnet', 'Marigold', 'Moth',
             'Muntjac', 'Orange', 'Pheasant', 'Plum', 'Poppy', 'Red', 'Robin', 'Snail', 'Viper', 'Weevil'
         ],
+        'RED': [
+            'Ant', 'Apple', 'Ash', 'Asphodel', 'Brambling', 'Chanterelle', 'Cherry', 'Deer', 'Ember', 'Fire',
+            'Fox', 'Fritillary', 'Frog', 'Ginger', 'Honey', 'Kestral', 'Larch', 'Linnet', 'Marigold', 'Moth',
+            'Muntjac', 'Orange', 'Pheasant', 'Plum', 'Poppy', 'Red', 'Robin', 'Snail', 'Viper', 'Weevil'
+        ],
+        'RAIN': [
+            'Blue', 'Boulder', 'Burdock', 'Cinder', 'Comfrey', 'Cuckoo', 'Dace', 'Duck', 'Falcon', 'Goose',
+            'Gray', 'Harrier', 'Hazel', 'Juniper', 'Mist', 'Moth', 'Partridge', 'Pebble', 'Pigeon', 'Pine',
+            'Quail', 'Rain', 'Rock', 'Slate', 'Slug', 'Snake', 'Squirrel', 'Stone', 'Storm', 'Thistle'
+        ],
+        'MIST': [
+            'Blue', 'Boulder', 'Burdock', 'Cinder', 'Comfrey', 'Cuckoo', 'Dace', 'Duck', 'Falcon', 'Goose',
+            'Gray', 'Harrier', 'Hazel', 'Juniper', 'Mist', 'Moth', 'Partridge', 'Pebble', 'Pigeon', 'Pine',
+            'Quail', 'Rain', 'Rock', 'Slate', 'Slug', 'Snake', 'Squirrel', 'Stone', 'Storm', 'Thistle'
+        ],
         'GRAY': [
             'Blue', 'Boulder', 'Burdock', 'Cinder', 'Comfrey', 'Cuckoo', 'Dace', 'Duck', 'Falcon', 'Goose',
             'Gray', 'Harrier', 'Hazel', 'Juniper', 'Mist', 'Moth', 'Partridge', 'Pebble', 'Pigeon', 'Pine',
             'Quail', 'Rain', 'Rock', 'Slate', 'Slug', 'Snake', 'Squirrel', 'Stone', 'Storm', 'Thistle'
+        ],
+        'BLUE': [
+            'Blue', 'Boulder', 'Burdock', 'Cinder', 'Comfrey', 'Cuckoo', 'Dace', 'Duck', 'Falcon', 'Goose',
+            'Gray', 'Harrier', 'Hazel', 'Juniper', 'Mist', 'Moth', 'Partridge', 'Pebble', 'Pigeon', 'Pine',
+            'Quail', 'Rain', 'Rock', 'Slate', 'Slug', 'Snake', 'Squirrel', 'Stone', 'Storm', 'Thistle'
+        ],
+        'SLATE': [
+            'Blue', 'Boulder', 'Burdock', 'Cinder', 'Comfrey', 'Cuckoo', 'Dace', 'Duck', 'Falcon', 'Goose',
+            'Gray', 'Harrier', 'Hazel', 'Juniper', 'Mist', 'Moth', 'Partridge', 'Pebble', 'Pigeon', 'Pine',
+            'Quail', 'Rain', 'Rock', 'Slate', 'Slug', 'Snake', 'Squirrel', 'Stone', 'Storm', 'Thistle'
+        ],
+        'STORM': [
+            'Blue', 'Boulder', 'Burdock', 'Cinder', 'Comfrey', 'Cuckoo', 'Dace', 'Duck', 'Falcon', 'Goose',
+            'Gray', 'Harrier', 'Hazel', 'Juniper', 'Mist', 'Moth', 'Partridge', 'Pebble', 'Pigeon', 'Pine',
+            'Quail', 'Rain', 'Rock', 'Slate', 'Slug', 'Snake', 'Squirrel', 'Stone', 'Storm', 'Thistle'
+        ],
+        'HEATHER': [
+            'Boulder', 'Burnet', 'Campion', 'Cherry', 'Chicory', 'Dust', 'Deer', 'Fritillary', 'Heather', 'Larch',
+            'Lark', 'Lavender', 'Lilac', 'Lily', 'Maple', 'Moth', 'Mouse', 'Pebble', 'Poppy', 'Quail',
+            'Rock', 'Rose', 'Rush', 'Sorrel', 'Stone', 'Teasel', 'Thistle', 'Thrift', 'Valerian', 'Wisteriae'
+        ],
+        'ROSE': [
+            'Boulder', 'Burnet', 'Campion', 'Cherry', 'Chicory', 'Dust', 'Deer', 'Fritillary', 'Heather', 'Larch',
+            'Lark', 'Lavender', 'Lilac', 'Lily', 'Maple', 'Moth', 'Mouse', 'Pebble', 'Poppy', 'Quail',
+            'Rock', 'Rose', 'Rush', 'Sorrel', 'Stone', 'Teasel', 'Thistle', 'Thrift', 'Valerian', 'Wisteriae'
         ],
         'LILAC': [
             'Boulder', 'Burnet', 'Campion', 'Cherry', 'Chicory', 'Dust', 'Deer', 'Fritillary', 'Heather', 'Larch',
             'Lark', 'Lavender', 'Lilac', 'Lily', 'Maple', 'Moth', 'Mouse', 'Pebble', 'Poppy', 'Quail',
             'Rock', 'Rose', 'Rush', 'Sorrel', 'Stone', 'Teasel', 'Thistle', 'Thrift', 'Valerian', 'Wisteriae'
         ],
+        'LAVENDER': [
+            'Boulder', 'Burnet', 'Campion', 'Cherry', 'Chicory', 'Dust', 'Deer', 'Fritillary', 'Heather', 'Larch',
+            'Lark', 'Lavender', 'Lilac', 'Lily', 'Maple', 'Moth', 'Mouse', 'Pebble', 'Poppy', 'Quail',
+            'Rock', 'Rose', 'Rush', 'Sorrel', 'Stone', 'Teasel', 'Thistle', 'Thrift', 'Valerian', 'Wisteriae'
+        ],
+        'DUST': [
+            'Boulder', 'Burnet', 'Campion', 'Cherry', 'Chicory', 'Dust', 'Deer', 'Fritillary', 'Heather', 'Larch',
+            'Lark', 'Lavender', 'Lilac', 'Lily', 'Maple', 'Moth', 'Mouse', 'Pebble', 'Poppy', 'Quail',
+            'Rock', 'Rose', 'Rush', 'Sorrel', 'Stone', 'Teasel', 'Thistle', 'Thrift', 'Valerian', 'Wisteriae'
+        ],
+        'MOUSE': [
+            'Boulder', 'Burnet', 'Campion', 'Cherry', 'Chicory', 'Dust', 'Deer', 'Fritillary', 'Heather', 'Larch',
+            'Lark', 'Lavender', 'Lilac', 'Lily', 'Maple', 'Moth', 'Mouse', 'Pebble', 'Poppy', 'Quail',
+            'Rock', 'Rose', 'Rush', 'Sorrel', 'Stone', 'Teasel', 'Thistle', 'Thrift', 'Valerian', 'Wisteriae'
+        ],
+        'PINK': [
+            'Brambling', 'Brown', 'Curlew', 'Deer', 'Doe', 'Dipper', 'Dust', 'Fawn', 'Lark', 'Limpet',
+            'Linnet', 'Mosquito', 'Moth', 'Mouse', 'Nightingale', 'Pheasant', 'Pink', 'Rabbit', 'Rat', 'Reed',
+            'Sand', 'Sedge', 'Shrew', 'Stag', 'Slug', 'Snail', 'Snake', 'Toad', 'Twite', 'Vole'
+        ],
+        'SHREW': [
+            'Brambling', 'Brown', 'Curlew', 'Deer', 'Doe', 'Dipper', 'Dust', 'Fawn', 'Lark', 'Limpet',
+            'Linnet', 'Mosquito', 'Moth', 'Mouse', 'Nightingale', 'Pheasant', 'Pink', 'Rabbit', 'Rat', 'Reed',
+            'Sand', 'Sedge', 'Shrew', 'Stag', 'Slug', 'Snail', 'Snake', 'Toad', 'Twite', 'Vole'
+        ],
+        'STAG': [
+            'Brambling', 'Brown', 'Curlew', 'Deer', 'Doe', 'Dipper', 'Dust', 'Fawn', 'Lark', 'Limpet',
+            'Linnet', 'Mosquito', 'Moth', 'Mouse', 'Nightingale', 'Pheasant', 'Pink', 'Rabbit', 'Rat', 'Reed',
+            'Sand', 'Sedge', 'Shrew', 'Stag', 'Slug', 'Snail', 'Snake', 'Toad', 'Twite', 'Vole'
+        ],
+        'DOE': [
+            'Brambling', 'Brown', 'Curlew', 'Deer', 'Doe', 'Dipper', 'Dust', 'Fawn', 'Lark', 'Limpet',
+            'Linnet', 'Mosquito', 'Moth', 'Mouse', 'Nightingale', 'Pheasant', 'Pink', 'Rabbit', 'Rat', 'Reed',
+            'Sand', 'Sedge', 'Shrew', 'Stag', 'Slug', 'Snail', 'Snake', 'Toad', 'Twite', 'Vole'
+        ],
         'FAWN': [
             'Brambling', 'Brown', 'Curlew', 'Deer', 'Doe', 'Dipper', 'Dust', 'Fawn', 'Lark', 'Limpet',
             'Linnet', 'Mosquito', 'Moth', 'Mouse', 'Nightingale', 'Pheasant', 'Pink', 'Rabbit', 'Rat', 'Reed',
             'Sand', 'Sedge', 'Shrew', 'Stag', 'Slug', 'Snail', 'Snake', 'Toad', 'Twite', 'Vole'
+        ],
+        'SAND': [
+            'Brambling', 'Brown', 'Curlew', 'Deer', 'Doe', 'Dipper', 'Dust', 'Fawn', 'Lark', 'Limpet',
+            'Linnet', 'Mosquito', 'Moth', 'Mouse', 'Nightingale', 'Pheasant', 'Pink', 'Rabbit', 'Rat', 'Reed',
+            'Sand', 'Sedge', 'Shrew', 'Stag', 'Slug', 'Snail', 'Snake', 'Toad', 'Twite', 'Vole'
+        ],
+        'BUFF': [
+            'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
+            'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
+            'Poppy', 'Privet ', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
         ],
         'CREAM': [
             'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
             'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
             'Poppy', 'Privet ', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
         ],
+        'DAISY': [
+            'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
+            'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
+            'Poppy', 'Privet ', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
+        ],
+        'SUN': [
+            'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
+            'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
+            'Poppy', 'Privet ', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
+        ],
+        'TAN': [
+            'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
+            'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
+            'Poppy', 'Privet ', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
+        ],
+        'OCHRE': [
+            'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
+            'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
+            'Poppy', 'Privet ', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
+        ],
+        'ASH': [
+            'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
+            'Duck', 'Elder', 'Elm', 'Frog', 'Goose', 'Gravel', 'Moth', 'Owl', 'Pebble', 'Pigeon',
+            'Pine', 'Privet', 'Rat', 'Robin', 'Rock', 'Sedge', 'Sparrow', 'Stone', 'Thistle', 'Worm'
+        ],
+        'BIRCH': [
+            'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
+            'Duck', 'Elder', 'Elm', 'Frog', 'Goose', 'Gravel', 'Moth', 'Owl', 'Pebble', 'Pigeon',
+            'Pine', 'Privet', 'Rat', 'Robin', 'Rock', 'Sedge', 'Sparrow', 'Stone', 'Thistle', 'Worm'
+        ],
+        'PIGEON': [
+            'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
+            'Duck', 'Elder', 'Elm', 'Frog', 'Goose', 'Gravel', 'Moth', 'Owl', 'Pebble', 'Pigeon',
+            'Pine', 'Privet', 'Rat', 'Robin', 'Rock', 'Sedge', 'Sparrow', 'Stone', 'Thistle', 'Worm'
+        ],
+        'WORM': [
+            'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
+            'Duck', 'Elder', 'Elm', 'Frog', 'Goose', 'Gravel', 'Moth', 'Owl', 'Pebble', 'Pigeon',
+            'Pine', 'Privet', 'Rat', 'Robin', 'Rock', 'Sedge', 'Sparrow', 'Stone', 'Thistle', 'Worm'
+        ],
         'CARAMEL': [
             'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
             'Duck', 'Elder', 'Elm', 'Frog', 'Goose', 'Gravel', 'Moth', 'Owl', 'Pebble', 'Pigeon',
             'Pine', 'Privet', 'Rat', 'Robin', 'Rock', 'Sedge', 'Sparrow', 'Stone', 'Thistle', 'Worm'
+        ],
+        'GRAVEL': [
+            'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
+            'Duck', 'Elder', 'Elm', 'Frog', 'Goose', 'Gravel', 'Moth', 'Owl', 'Pebble', 'Pigeon',
+            'Pine', 'Privet', 'Rat', 'Robin', 'Rock', 'Sedge', 'Sparrow', 'Stone', 'Thistle', 'Worm'
+        ],
+        'BONE': [
+            'Argus', 'Bone', 'Boulder', 'Brown', 'Curlew', 'Cypress', 'Dawn', 'Deer', 'Dunock', 'Dusk',
+            'Dust', 'Jay', 'Juniper', 'Lark', 'Pebble', 'Pine', 'Quail', 'Rat', 'Rock', 'Sedge',
+            'Skipper', 'Sparrow', 'Stone', 'Thistle', 'Thrush', 'Twite', 'Wheat', 'Whimbrel', 'Wren', 'Yew'
+        ],
+        'WHEAT': [
+            'Argus', 'Bone', 'Boulder', 'Brown', 'Curlew', 'Cypress', 'Dawn', 'Deer', 'Dunock', 'Dusk',
+            'Dust', 'Jay', 'Juniper', 'Lark', 'Pebble', 'Pine', 'Quail', 'Rat', 'Rock', 'Sedge',
+            'Skipper', 'Sparrow', 'Stone', 'Thistle', 'Thrush', 'Twite', 'Wheat', 'Whimbrel', 'Wren', 'Yew'
+        ],
+        'DAWN': [
+            'Argus', 'Bone', 'Boulder', 'Brown', 'Curlew', 'Cypress', 'Dawn', 'Deer', 'Dunock', 'Dusk',
+            'Dust', 'Jay', 'Juniper', 'Lark', 'Pebble', 'Pine', 'Quail', 'Rat', 'Rock', 'Sedge',
+            'Skipper', 'Sparrow', 'Stone', 'Thistle', 'Thrush', 'Twite', 'Wheat', 'Whimbrel', 'Wren', 'Yew'
+        ],
+        'SPARROW': [
+            'Argus', 'Bone', 'Boulder', 'Brown', 'Curlew', 'Cypress', 'Dawn', 'Deer', 'Dunock', 'Dusk',
+            'Dust', 'Jay', 'Juniper', 'Lark', 'Pebble', 'Pine', 'Quail', 'Rat', 'Rock', 'Sedge',
+            'Skipper', 'Sparrow', 'Stone', 'Thistle', 'Thrush', 'Twite', 'Wheat', 'Whimbrel', 'Wren', 'Yew'
         ],
         'TAUPE': [
             'Argus', 'Bone', 'Boulder', 'Brown', 'Curlew', 'Cypress', 'Dawn', 'Deer', 'Dunock', 'Dusk',
             'Dust', 'Jay', 'Juniper', 'Lark', 'Pebble', 'Pine', 'Quail', 'Rat', 'Rock', 'Sedge',
             'Skipper', 'Sparrow', 'Stone', 'Thistle', 'Thrush', 'Twite', 'Wheat', 'Whimbrel', 'Wren', 'Yew'
         ],
-        'FAWNTAUPE': [
+        'DUSK': [
+            'Argus', 'Bone', 'Boulder', 'Brown', 'Curlew', 'Cypress', 'Dawn', 'Deer', 'Dunock', 'Dusk',
+            'Dust', 'Jay', 'Juniper', 'Lark', 'Pebble', 'Pine', 'Quail', 'Rat', 'Rock', 'Sedge',
+            'Skipper', 'Sparrow', 'Stone', 'Thistle', 'Thrush', 'Twite', 'Wheat', 'Whimbrel', 'Wren', 'Yew'
+        ],
+        'PEARL': [
             'Aspen', 'Beige', 'Bone', 'Brown', 'Curlew', 'Dawn', 'Deer', 'Dipper', 'Doe', 'Dusk',
             'Dust', 'Fawn', 'Lark', 'Moth', 'Mouse', 'Oat', 'Olive', 'Tawny', 'Pearl', 'Pink',
             'Thistle', 'Twite', 'Sand', 'Sedge', 'Shrew', 'Sparrow', 'Stag', 'Wheat', 'Whinchat'
+        ],
+        'BEIGE': [
+            'Aspen', 'Beige', 'Bone', 'Brown', 'Curlew', 'Dawn', 'Deer', 'Dipper', 'Doe', 'Dusk',
+            'Dust', 'Fawn', 'Lark', 'Moth', 'Mouse', 'Oat', 'Olive', 'Tawny', 'Pearl', 'Pink',
+            'Thistle', 'Twite', 'Sand', 'Sedge', 'Shrew', 'Sparrow', 'Stag', 'Wheat', 'Whinchat'
+        ],
+        'OAT': [
+            'Aspen', 'Beige', 'Bone', 'Brown', 'Curlew', 'Dawn', 'Deer', 'Dipper', 'Doe', 'Dusk',
+            'Dust', 'Fawn', 'Lark', 'Moth', 'Mouse', 'Oat', 'Olive', 'Tawny', 'Pearl', 'Pink',
+            'Thistle', 'Twite', 'Sand', 'Sedge', 'Shrew', 'Sparrow', 'Stag', 'Wheat', 'Whinchat'
+        ],
+        'ASPEN': [
+            'Aspen', 'Beige', 'Bone', 'Brown', 'Curlew', 'Dawn', 'Deer', 'Dipper', 'Doe', 'Dusk',
+            'Dust', 'Fawn', 'Lark', 'Moth', 'Mouse', 'Oat', 'Olive', 'Tawny', 'Pearl', 'Pink',
+            'Thistle', 'Twite', 'Sand', 'Sedge', 'Shrew', 'Sparrow', 'Stag', 'Wheat', 'Whinchat'
+        ],
+        'TAWNY': [
+            'Aspen', 'Beige', 'Bone', 'Brown', 'Curlew', 'Dawn', 'Deer', 'Dipper', 'Doe', 'Dusk',
+            'Dust', 'Fawn', 'Lark', 'Moth', 'Mouse', 'Oat', 'Olive', 'Tawny', 'Pearl', 'Pink',
+            'Thistle', 'Twite', 'Sand', 'Sedge', 'Shrew', 'Sparrow', 'Stag', 'Wheat', 'Whinchat'
+        ],
+        'OLIVE': [
+            'Aspen', 'Beige', 'Bone', 'Brown', 'Curlew', 'Dawn', 'Deer', 'Dipper', 'Doe', 'Dusk',
+            'Dust', 'Fawn', 'Lark', 'Moth', 'Mouse', 'Oat', 'Olive', 'Tawny', 'Pearl', 'Pink',
+            'Thistle', 'Twite', 'Sand', 'Sedge', 'Shrew', 'Sparrow', 'Stag', 'Wheat', 'Whinchat'
+        ],
+        'SHELL': [
+            'Apple', 'Apricot', 'Asphodel', 'Bee', 'Buff', 'Chanterelle', 'Coral', 'Cream', 'Daisy', 'Ember',
+            'Fire', 'Flame', 'Ginger', 'Honey', 'Larch', 'Marigold', 'Moth', 'Nightingale', 'Ochre', 'Orange',
+            'Peach', 'Poppy', 'Red', 'Salmon', 'Shell', 'Snail', 'Sun', 'Tan', 'Wasp', 'Weevil'
+        ],
+        'PEACH': [
+            'Apple', 'Apricot', 'Asphodel', 'Bee', 'Buff', 'Chanterelle', 'Coral', 'Cream', 'Daisy', 'Ember',
+            'Fire', 'Flame', 'Ginger', 'Honey', 'Larch', 'Marigold', 'Moth', 'Nightingale', 'Ochre', 'Orange',
+            'Peach', 'Poppy', 'Red', 'Salmon', 'Shell', 'Snail', 'Sun', 'Tan', 'Wasp', 'Weevil'
+        ],
+        'SALMON': [
+            'Apple', 'Apricot', 'Asphodel', 'Bee', 'Buff', 'Chanterelle', 'Coral', 'Cream', 'Daisy', 'Ember',
+            'Fire', 'Flame', 'Ginger', 'Honey', 'Larch', 'Marigold', 'Moth', 'Nightingale', 'Ochre', 'Orange',
+            'Peach', 'Poppy', 'Red', 'Salmon', 'Shell', 'Snail', 'Sun', 'Tan', 'Wasp', 'Weevil'
         ],
         'APRICOT': [
             'Apple', 'Apricot', 'Asphodel', 'Bee', 'Buff', 'Chanterelle', 'Coral', 'Cream', 'Daisy', 'Ember',
             'Fire', 'Flame', 'Ginger', 'Honey', 'Larch', 'Marigold', 'Moth', 'Nightingale', 'Ochre', 'Orange',
             'Peach', 'Poppy', 'Red', 'Salmon', 'Shell', 'Snail', 'Sun', 'Tan', 'Wasp', 'Weevil'
-        ]}
+        ],
+        'CORAL': [
+            'Apple', 'Apricot', 'Asphodel', 'Bee', 'Buff', 'Chanterelle', 'Coral', 'Cream', 'Daisy', 'Ember',
+            'Fire', 'Flame', 'Ginger', 'Honey', 'Larch', 'Marigold', 'Moth', 'Nightingale', 'Ochre', 'Orange',
+            'Peach', 'Poppy', 'Red', 'Salmon', 'Shell', 'Snail', 'Sun', 'Tan', 'Wasp', 'Weevil'
+        ],
+        'FLAME': [
+            'Apple', 'Apricot', 'Asphodel', 'Bee', 'Buff', 'Chanterelle', 'Coral', 'Cream', 'Daisy', 'Ember',
+            'Fire', 'Flame', 'Ginger', 'Honey', 'Larch', 'Marigold', 'Moth', 'Nightingale', 'Ochre', 'Orange',
+            'Peach', 'Poppy', 'Red', 'Salmon', 'Shell', 'Snail', 'Sun', 'Tan', 'Wasp', 'Weevil'
+        ],}
 
     eye_prefixes = {
         None
