@@ -583,7 +583,7 @@ for a, i in enumerate(['BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK']):
     sprites.make_group('cococarameltickedcolours', (a, 1), f'ticked{i}')
     sprites.make_group('cococarameltickedextra', (a, 1), f'tickedextra{i}', sprites_y=2)
 for a, i in enumerate(['PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE']):
-    sprites.make_group('cococarameltickedtickedcolours', (a, 2), f'ticked{i}')
+    sprites.make_group('cococarameltickedcolours', (a, 2), f'ticked{i}')
     sprites.make_group('cococarameltickedextra', (a, 2), f'tickedextra{i}', sprites_y=2)
 for a, i in enumerate(['SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME']):
     sprites.make_group('cococarameltickedcolours', (a, 2), f'ticked{i}')
