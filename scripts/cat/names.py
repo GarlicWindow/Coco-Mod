@@ -226,35 +226,36 @@ class Name():
         self.suffix = suffix
         
         # Set prefix
+        prefix_choice = None
         if prefix is None:
-            possible_prefix_categories = []
-            if colour is not None:
+                if colour is not None:
                     if colour in ginger_colours:
-                        possible_prefix_catagories.append(self.ginger_prefixes)
+                        prefix_choice = random.choice(self.ginger_prefixes)
                     elif colour in black_colours:
-                        possible_prefix_catagories.append(self.black_prefixes)
+                        prefix_choice = random.choice(self.black_prefixes)
                     elif colour in chocolate_colours:
-                        possible_prefix_catagories.append(self.chocolate_prefixes)
+                        prefix_choice = random.choice(self.chocolate_prefixes)
                     elif colour in cinnamon_colours:
-                        possible_prefix_catagories.append(self.cinnamon_prefixes)
+                        prefix_choice = random.choice(self.cinnamon_prefixes)
                     elif colour in cream_colours:
-                        possible_prefix_catagories.append(self.cream_prefixes)
+                        prefix_choice = random.choice(self.cream_prefixes)
                     elif colour in gray_colours:
-                        possible_prefix_catagories.append(self.gray_prefixes)
+                        prefix_choice = random.choice(self.gray_prefixes)
                     elif colour in lilac_colours:
-                        possible_prefix_catagories.append(self.lilac_prefixes)
+                        prefix_choice = random.choice(self.lilac_prefixes)
                     elif colour in fawn_colours:
-                        possible_prefix_catagories.append(self.fawn_prefixes)
+                        prefix_choice = random.choice(self.fawn_prefixes)
                     elif colour in apricot_colours:
-                        possible_prefix_catagories.append(self.apricot_prefixes)
+                        prefix_choice = random.choice(self.apricot_prefixes)
                     elif colour in caramel_colours:
-                        possible_prefix_catagories.append(self.caramel_prefixes)
+                        prefix_choice = random.choice(self.caramel_prefixes)
                     elif colour in taupe_colours:
-                        possible_prefix_catagories.append(self.taupe_prefixes)
+                        prefix_choice = random.choice(self.taupe_prefixes)
                     elif colour in fawntaupe_colours:
-                        possible_prefix_catagories.append(self.fawntaupe_prefixes)
-            else:
-                self.prefix = random.choice(self.normal_prefixes)
+                        prefix_choice = random.choice(self.fawntaupe_prefixes)
+                    self.prefix = random.choice(prefix_choice)
+                else:
+                    self.prefix = random.choice(self.normal_prefixes)
         # Set suffix
         while self.suffix is None or self.suffix == self.prefix.casefold() or\
          str(self.suffix) in self.prefix.casefold() and not str(self.suffix) == '':
