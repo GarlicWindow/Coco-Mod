@@ -257,7 +257,7 @@ sprites = Sprites(50)
 
 for x in [
     'lineart', 'lineartdead', 'lineartdf',
-    'fadestarclan', 'fadedarkforest' 'fademask',
+    'fadestarclan', 'fadedarkforest', 'fademask',
     'shadersnewwhite', 'lightingnew',
     'whitepatches', 'whiteextra', 'whitepatchesnew', 'whitenewextra',
     'whitepatches3', 'whitepatches3extra', 'whitepatches4', 'whitepatches4extra',
