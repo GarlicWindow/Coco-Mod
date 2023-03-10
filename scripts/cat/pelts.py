@@ -200,7 +200,7 @@ pelt_c_no_bw = [
 ]
 tortiepatterns = ['tortiesolid', 'tortiemackerel', 'tortieclassic', 'tortiespotted',
                   'tortieticked','tortieagouti',
-                  'tortiemarbled', 'tortierosette']
+                  'tortiemarbled', 'tortierosetted']
 patch_colours = ['PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR',
                  'GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR',
                  'GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
