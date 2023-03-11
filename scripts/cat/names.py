@@ -135,7 +135,7 @@ class Name():
     cream_prefixes = [
             'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
             'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
-            'Poppy', 'Privet ', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
+            'Poppy', 'Privet', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
     ],
     caramel_prefixes = [
             'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
