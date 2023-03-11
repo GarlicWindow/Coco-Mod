@@ -101,57 +101,57 @@ class Name():
             'Ant', 'Bat', 'Beetle', 'Black', 'Coal', 'Coot', 'Cormorant', 'Crow', 'Dark', 'Dipper',
             'Ebony', 'Fly', 'Falcon', 'Ivy', 'Juniper', 'Mole', 'Night', 'Privet', 'Rat', 'Raven',
             'Rook', 'Sedge', 'Shade', 'Shadow', 'Sloe', 'Slug', 'Soot', 'Spider', 'Starling', 'Swift'
-    ],
+    ]
     chocolate_prefixes = [
             'Alder', 'Bat', 'Beetle', 'Bramble', 'Briar', 'Brown', 'Buzzard', 'Chestnut', 'Cypress', 'Dark',
             'Deer', 'Dipper', 'Duck', 'Eagle', 'Eel', 'Elm', 'Falcon', 'Frog', 'Goose', 'Ivy',
             'Lamprey', 'Lizard', 'Mink', 'Otter', 'Rat', 'Sedge', 'Spider', 'Twig', 'Umber', 'Weasel'
-    ],
+    ]
     cinnamon_prefixes = [
             'Acorn', 'Argus', 'Autumn','Bat', 'Bramble', 'Briar', 'Brown', 'Cedar', 'Cinnamon', 'Deer',
             'Duck', 'Falcon', 'Grouse', 'Hare', 'Harrier', 'Hazel', 'Kestral', 'Linnet', 'Mouse', 'Moth',
             'Muntjac', 'Oak', 'Owl', 'Pine', 'Rail', 'Rat', 'Rust', 'Sedge', 'Sparrow', 'Whinchat'
-    ],
+    ]
     ginger_prefixes = [
             'Ant', 'Apple', 'Ash', 'Asphodel', 'Brambling', 'Chanterelle', 'Cherry', 'Deer', 'Ember', 'Fire',
             'Fox', 'Fritillary', 'Frog', 'Ginger', 'Honey', 'Kestral', 'Larch', 'Linnet', 'Marigold', 'Moth',
             'Muntjac', 'Orange', 'Pheasant', 'Plum', 'Poppy', 'Red', 'Robin', 'Snail', 'Viper', 'Weevil'
-    ],
+    ]
     gray_prefixes = [
             'Blue', 'Boulder', 'Burdock', 'Cinder', 'Comfrey', 'Cuckoo', 'Dace', 'Duck', 'Falcon', 'Goose',
             'Gray', 'Harrier', 'Hazel', 'Juniper', 'Mist', 'Moth', 'Partridge', 'Pebble', 'Pigeon', 'Pine',
             'Quail', 'Rain', 'Rock', 'Slate', 'Slug', 'Snake', 'Squirrel', 'Stone', 'Storm', 'Thistle'
-    ],
+    ]
     lilac_prefixes = [
             'Boulder', 'Burnet', 'Campion', 'Cherry', 'Chicory', 'Dust', 'Deer', 'Fritillary', 'Heather', 'Larch',
             'Lark', 'Lavender', 'Lilac', 'Lily', 'Maple', 'Moth', 'Mouse', 'Pebble', 'Poppy', 'Quail',
             'Rock', 'Rose', 'Rush', 'Sorrel', 'Stone', 'Teasel', 'Thistle', 'Thrift', 'Valerian', 'Wisteriae'
-    ],
+    ]
     fawn_prefixes = [
             'Brambling', 'Brown', 'Curlew', 'Deer', 'Doe', 'Dipper', 'Dust', 'Fawn', 'Lark', 'Limpet',
             'Linnet', 'Mosquito', 'Moth', 'Mouse', 'Nightingale', 'Pheasant', 'Pink', 'Rabbit', 'Rat', 'Reed',
             'Sand', 'Sedge', 'Shrew', 'Stag', 'Slug', 'Snail', 'Snake', 'Toad', 'Twite', 'Vole'
-    ],
+    ]
     cream_prefixes = [
             'Apple', 'Asphodel', 'Bee', 'Buff', 'Carp', 'Chanterelle', 'Comfrey', 'Cream', 'Curlew', 'Daisy',
             'Elder', 'Gecko', 'Hazel', 'Hornet', 'Larch', 'Maple', 'Minnow', 'Moth', 'Ochre', 'Perch',
             'Poppy', 'Privet', 'Reed', 'Rose', 'Snail', 'Sun', 'Tan', 'Trout', 'Wasp', 'Weevil'
-    ],
+    ]
     caramel_prefixes = [
             'Ash', 'Bat', 'Beech', 'Birch', 'Boulder', 'Chub', 'Curlew', 'Cypress', 'Deer', 'Dipper',
             'Duck', 'Elder', 'Elm', 'Frog', 'Goose', 'Gravel', 'Moth', 'Owl', 'Pebble', 'Pigeon',
             'Pine', 'Privet', 'Rat', 'Robin', 'Rock', 'Sedge', 'Sparrow', 'Stone', 'Thistle', 'Worm'
-    ],
+    ]
     taupe_prefixes = [
             'Argus', 'Bone', 'Boulder', 'Brown', 'Curlew', 'Cypress', 'Dawn', 'Deer', 'Dunock', 'Dusk',
             'Dust', 'Jay', 'Juniper', 'Lark', 'Pebble', 'Pine', 'Quail', 'Rat', 'Rock', 'Sedge',
             'Skipper', 'Sparrow', 'Stone', 'Thistle', 'Thrush', 'Twite', 'Wheat', 'Whimbrel', 'Wren', 'Yew'
-    ],
+    ]
     fawntaupe_prefixes = [
             'Aspen', 'Beige', 'Bone', 'Brown', 'Curlew', 'Dawn', 'Deer', 'Dipper', 'Doe', 'Dusk',
             'Dust', 'Fawn', 'Lark', 'Moth', 'Mouse', 'Oat', 'Olive', 'Tawny', 'Pearl', 'Pink',
             'Thistle', 'Twite', 'Sand', 'Sedge', 'Shrew', 'Sparrow', 'Stag', 'Wheat', 'Whinchat'
-    ],
+    ]
     apricot_prefixes = [
             'Apple', 'Apricot', 'Asphodel', 'Bee', 'Buff', 'Chanterelle', 'Coral', 'Cream', 'Daisy', 'Ember',
             'Fire', 'Flame', 'Ginger', 'Honey', 'Larch', 'Marigold', 'Moth', 'Nightingale', 'Ochre', 'Orange',
@@ -264,34 +264,34 @@ class Name():
         # Set prefix
         prefix_choice = None
         if prefix is None:
-                if colour is not None:
-                    if colour in ginger_colours:
-                        prefix_choice = random.choice(self.ginger_prefixes)
-                    elif colour in black_colours:
-                        prefix_choice = random.choice(self.black_prefixes)
-                    elif colour in chocolate_colours:
-                        prefix_choice = random.choice(self.chocolate_prefixes)
-                    elif colour in cinnamon_colours:
-                        prefix_choice = random.choice(self.cinnamon_prefixes)
-                    elif colour in cream_colours:
-                        prefix_choice = random.choice(self.cream_prefixes)
-                    elif colour in gray_colours:
-                        prefix_choice = random.choice(self.gray_prefixes)
-                    elif colour in lilac_colours:
-                        prefix_choice = random.choice(self.lilac_prefixes)
-                    elif colour in fawn_colours:
-                        prefix_choice = random.choice(self.fawn_prefixes)
-                    elif colour in apricot_colours:
-                        prefix_choice = random.choice(self.apricot_prefixes)
-                    elif colour in caramel_colours:
-                        prefix_choice = random.choice(self.caramel_prefixes)
-                    elif colour in taupe_colours:
-                        prefix_choice = random.choice(self.taupe_prefixes)
-                    elif colour in fawntaupe_colours:
-                        prefix_choice = random.choice(self.fawntaupe_prefixes)
-                    self.prefix = random.choice(prefix_choice)
-                else:
-                    self.prefix = random.choice(self.normal_prefixes)
+            if colour is not None:
+                if colour in ginger_colours:
+                    prefix_choice = random.choice(self.ginger_prefixes)
+                elif colour in black_colours:
+                    prefix_choice = random.choice(self.black_prefixes)
+                elif colour in chocolate_colours:
+                    prefix_choice = random.choice(self.chocolate_prefixes)
+                elif colour in cinnamon_colours:
+                    prefix_choice = random.choice(self.cinnamon_prefixes)
+                elif colour in cream_colours:
+                    prefix_choice = random.choice(self.cream_prefixes)
+                elif colour in gray_colours:
+                    prefix_choice = random.choice(self.gray_prefixes)
+                elif colour in lilac_colours:
+                    prefix_choice = random.choice(self.lilac_prefixes)
+                elif colour in fawn_colours:
+                    prefix_choice = random.choice(self.fawn_prefixes)
+                elif colour in apricot_colours:
+                    prefix_choice = random.choice(self.apricot_prefixes)
+                elif colour in caramel_colours:
+                    prefix_choice = random.choice(self.caramel_prefixes)
+                elif colour in taupe_colours:
+                    prefix_choice = random.choice(self.taupe_prefixes)
+                elif colour in fawntaupe_colours:
+                    prefix_choice = random.choice(self.fawntaupe_prefixes)
+                self.prefix = random.choice(prefix_choice)
+            else:
+                self.prefix = random.choice(self.normal_prefixes)
         # Set suffix
         while self.suffix is None or self.suffix == self.prefix.casefold() or\
          str(self.suffix) in self.prefix.casefold() and not str(self.suffix) == '':
