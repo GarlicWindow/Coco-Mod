@@ -133,7 +133,7 @@ class Tortie():
 
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
-        self.colour = colour
+        self.colour = choice(tortiecolours)
         self.length = length
 
     def __repr__(self):
@@ -147,7 +147,7 @@ class Calico():
     sprites = {1: 'calico', 2: 'white'}
 
     def __init__(self, colour, length):
-        self.colour = colour
+        self.colour = choice(tortiecolours)
         self.length = length
         self.white = True
 
@@ -210,15 +210,12 @@ tortiebases = ['solid', 'mackerel', 'classic', 'spotted', 'ticked', 'agouti', 'm
 tortiecolours = ['EBONY', 'COAL', 'SHADOW', 'CROW', 'RAVEN', 'BLACK',
                  'TWIG', 'CHESTNUT', 'COCOA', 'CHOCOLATE', 'UMBER', 'DARKCHOCOLATE',
                  'OAK', 'CEDAR', 'AUTUMN', 'RUST', 'CINNAMON', 'PINE',
-                 'HONEY', 'MARIGOLD', 'EMBER', 'ORANGE', 'GINGER', 'RED',
                  'RAIN', 'MIST', 'GRAY', 'BLUE', 'SLATE', 'STORM',
                  'HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUST', 'MOUSE',
                  'PINK', 'SHREW', 'STAG', 'DOE', 'FAWN', 'SAND',
-                 'BUFF', 'CREAM', 'DAISY', 'SUN', 'TAN', 'OCHRE',
                  'ASH', 'BIRCH', 'PIGEON', 'WORM', 'CARAMEL', 'GRAVEL',
                  'BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK',
-                 'PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE',
-                 'SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME']
+                 'PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE']
 
 pelt_length = ["short", "medium", "long"]
 eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
