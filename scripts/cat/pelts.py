@@ -207,7 +207,18 @@ patch_colours = ['PALEONE', 'PALETWO', 'PALETHREE', 'PALEFOUR',
                  'DARKONE', 'DARKTWO', 'DARKTHREE', 'DARKFOUR',
                  'CREAMONE', 'CREAMTWO', 'CREAMTHREE', 'CREAMFOUR']
 tortiebases = ['solid', 'mackerel', 'classic', 'spotted', 'ticked', 'agouti', 'marbled', 'rosetted']
-tortiecolours = ["SILVER", "GREY", "DARKGREY", "BLACK", "GHOST", "LIGHTBROWN", "BROWN", "DARKBROWN"]
+tortiecolours = ['EBONY', 'COAL', 'SHADOW', 'CROW', 'RAVEN', 'BLACK',
+                 'TWIG', 'CHESTNUT', 'COCOA', 'CHOCOLATE', 'UMBER', 'DARKCHOCOLATE',
+                 'OAK', 'CEDAR', 'AUTUMN', 'RUST', 'CINNAMON', 'PINE',
+                 'HONEY', 'MARIGOLD', 'EMBER', 'ORANGE', 'GINGER', 'RED',
+                 'RAIN', 'MIST', 'GRAY', 'BLUE', 'SLATE', 'STORM',
+                 'HEATHER', 'ROSE', 'LILAC', 'LAVENDER', 'DUST', 'MOUSE',
+                 'PINK', 'SHREW', 'STAG', 'DOE', 'FAWN', 'SAND',
+                 'BUFF', 'CREAM', 'DAISY', 'SUN', 'TAN', 'OCHRE',
+                 'ASH', 'BIRCH', 'PIGEON', 'WORM', 'CARAMEL', 'GRAVEL',
+                 'BONE', 'WHEAT', 'DAWN', 'SPARROW', 'TAUPE', 'DUSK',
+                 'PEARL', 'BEIGE', 'OAT', 'ASPEN', 'TAWNY', 'OLIVE',
+                 'SHELL', 'PEACH', 'SALMON', 'APRICOT', 'CORAL', 'FLAME']
 
 pelt_length = ["short", "medium", "long"]
 eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
