@@ -442,8 +442,7 @@ def describe_color(pelt, tortiecolour, tortiepattern, white_patches):
             # colorpoint
             elif white_patches in point_markings:
                 color_name = color_name + ' point'
-                if color_name == 'honey point' or color_name == 'marigold point' or color_name == 'ember point'
-                 or color_name == 'orange point'  or color_name == 'ginger point'  or color_name == 'red point':
+                if color_name == 'honey point' or color_name == 'marigold point' or color_name == 'ember point' or color_name == 'orange point'  or color_name == 'ginger point'  or color_name == 'red point':
                     color_name = 'flame point'
             # vitiligo
             elif white_patches in vit:
