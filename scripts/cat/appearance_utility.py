@@ -591,15 +591,15 @@ def init_pattern(cat):
     if cat.pelt.name in torties and cat.pelt.colour is not None:
         if cat.pelt.colour in black_colours:
             cat.pattern = choice(
-                ['GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR', 'GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
+                ['GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
                  'DARKONE', 'DARKTWO', 'DARKTHREE', 'DARKFOUR'])
         elif cat.pelt.colour in chocolate_colours:
             cat.pattern = choice(
-                ['GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR', 'GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
+                ['GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
                  'DARKONE', 'DARKTWO', 'DARKTHREE', 'DARKFOUR'])
         elif cat.pelt.colour in cinnamon_colours:
             cat.pattern = choice(
-                ['GOLDONE', 'GOLDTWO', 'GOLDTHREE', 'GOLDFOUR', 'GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
+                ['GINGERONE', 'GINGERTWO', 'GINGERTHREE', 'GINGERFOUR',
                  'DARKONE', 'DARKTWO', 'DARKTHREE', 'DARKFOUR'])
         elif cat.pelt.colour in gray_colours:
             cat.pattern = choice(
